@@ -111,7 +111,8 @@ class Database:
                 customer,
                 status,
                 datetime_create
-            ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9);
+            ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+            RETURNING id;
             """
         else:
             query = """
@@ -124,7 +125,8 @@ class Database:
                 price,
                 customer,
                 datetime_create
-            ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8);
+            ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+            RETURNING id;
             """
 
         try:
@@ -134,11 +136,11 @@ class Database:
             data['file'] = ','.join(data['file'])
             data['date'] = date
 
-            await self.pool.fetch(query, *data.values())
-            order_id = await self.pool.fetchval(
-                'SELECT id FROM orders WHERE customer=$1 AND datetime_create=$2',
-                data['customer'], date
-            )
+            order_id = await self.pool.fetchval(query, *data.values())
+            # order_id = await self.pool.fetchval(
+            #     'SELECT id FROM orders WHERE customer=$1 AND datetime_create=$2',
+            #     data['customer'], date
+            # )
 
             return dict(
                 text='Готово. Заказ опубликуется после модерации.',
@@ -278,21 +280,19 @@ class Database:
         amount: int,
     ) -> str:
         date = datetime.now().strftime('%d.%m.%Y %H:%M:%S')
-        await self.pool.fetch(
+        operation_id = await self.pool.fetchval(
             """
             INSERT INTO replenishment_operations (
                 user_id,
                 amount,
                 datetime_create
-            ) VALUES ($1,$2,$3);
+            ) VALUES ($1,$2,$3)
+            RETURNING id;
             """, 
             user_id, amount, date
         )
 
-        return await self.pool.fetchval(
-            'SELECT id FROM replenishment_operations WHERE user_id=$1 AND datetime_create=$2',
-            user_id, date
-        )
+        return operation_id
 
 
     async def payment_replenishment_operations(
