@@ -9,7 +9,7 @@ from keyboards.inline import back_order, skip, back_main, check_payment_kb
 
 from utils.states import NewOrder
 from utils.sender import answer_text, answer_file, answer_photo
-from utils.database import Database
+from utils.db.user_service import UserService
 
 
 router = Router()
@@ -51,9 +51,9 @@ async def order_create(callback_query: CallbackQuery, state: FSMContext):
     await callback_query.message.edit_text(
         text='Что за работа? Выбери или напиши свой', 
         reply_markup=inline_builder(
-            text=['Практическая', 'Самостоятельная'],
-            callback_data=['Практическая', 'Самостоятельная'],
-            sizes=1
+            text=['Практическая', 'Самостоятельная', 'Отмена'],
+            callback_data=['Практическая', 'Самостоятельная', 'back_order'],
+            sizes=[2, 1]
         )
     )
 
@@ -80,7 +80,7 @@ async def order_title(message: Message, state: FSMContext):
 
 @router.callback_query(NewOrder.about, F.data == 'skip')
 async def order_skip_photo(callback_query: CallbackQuery, state: FSMContext):
-    await state.update_data(about='Тютю')
+    await state.update_data(about=None)
     await state.set_state(NewOrder.photo)
     await callback_query.message.edit_text(
         text='Ну а сейчас скинь фото, если это надо\nНо не больше 10', 
@@ -111,7 +111,7 @@ async def order_skip_photo(callback_query: CallbackQuery, state: FSMContext):
     await state.update_data(photo=[])
     await state.set_state(NewOrder.file)
     await callback_query.message.edit_text(text='Файл-ы, так же если надо\nВсе так же, не больше 10', reply_markup=skip)
-    
+
 
 @router.message(NewOrder.file, F.document)
 async def order_file(message: Message | CallbackQuery, album: list[Message], state: FSMContext):
@@ -134,29 +134,54 @@ async def order_skip_photo(callback_query: CallbackQuery, state: FSMContext):
 @router.message(NewOrder.price, F.text)
 async def order_price(message: Message, state: FSMContext):
     text = message.text
-    if not text.isdigit() and re.findall(r'\d*', text):
+    if not text.isdigit():
         await message.answer('Введи корректное число!')
         return
     
     await state.update_data(price=int(text))
     data = await state.get_data()
+
+    # Подтверждение данных перед отправкой
+    confirmation_text = (
+        f"Тип работы: {data['type_work']}\n"
+        f"Название работы: {data['title']}\n"
+        f"Описание работы: {data.get('about', 'Не указано')}\n"
+        f"Фото: {len(data.get('photo', []))} фотографий\n"
+        f"Файлы: {len(data.get('file', []))} файлов\n"
+        f"Цена: {data['price']} ₽\n\n"
+        "Все верно?"
+    )
     
-    await answer_photo(message, data)
-    await answer_file(message, data)
-    await answer_text(message, data)
+    # Кнопки для подтверждения или изменения
+    await message.answer(
+        confirmation_text,
+        reply_markup=inline_builder(
+            text=['Подтвердить', 'Изменить'],
+            callback_data=['order_completed', 'edit_order'],
+            sizes=[2]
+        )
+    )
+
+
+@router.callback_query(F.data == 'edit_order')
+async def edit_order(callback_query: CallbackQuery, state: FSMContext):
+    # Переводим в нужное состояние для изменения данных
+    data = await state.get_data()
+    await callback_query.message.edit_text('Что ты хочешь изменить?')
+    await state.set_state(NewOrder.type_work)  # Например, начинаем с типа работы
 
 
 @router.callback_query(F.data == 'order_completed')
-async def order_completed(callback_query: CallbackQuery, db: Database, state: FSMContext):
+async def order_completed(callback_query: CallbackQuery, user_service: UserService, state: FSMContext):
     user_id = callback_query.from_user.id
     data = await state.get_data()
     data['customer'] = user_id
     price = data['price']
 
-    balance = await db.get_balance(user_id)
+    balance = await user_service.get_balance(user_id)
     if balance < price:
         price = price - balance
-        pattenr = dict(
+        pattern = dict(
             text='Недостаточно средств на счету!',
             reply_markup=inline_builder(
                 text=[
@@ -173,9 +198,8 @@ async def order_completed(callback_query: CallbackQuery, db: Database, state: FS
 
         data['status'] = 'Ожидание оплаты'
 
-        await callback_query.message.answer(**pattenr)
-        order_id = await db.add_order(data)
-        print(order_id)
+        await callback_query.message.answer(**pattern)
+        order_id = await user_service.add_order(data)
 
         data['reply_markup'] = check_payment_kb(order_id['order_id'])
 
@@ -183,7 +207,7 @@ async def order_completed(callback_query: CallbackQuery, db: Database, state: FS
         return
 
     await state.clear()
-    answer_db = await db.add_order(data)
+    answer_db = await user_service.add_order(data)
     await callback_query.message.edit_text(
         text=answer_db['text'],
         reply_markup=back_main

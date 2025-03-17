@@ -3,9 +3,9 @@ from aiogram.types import CallbackQuery
 from aiogram.utils.media_group import MediaGroupBuilder
 
 from utils.sender import answer_text
-from utils.database import Database
+from utils.db.user_service import UserService
 
-from keyboards.builders import Pagination, paginator
+from keyboards.builders import Pagination, paginator_orders, inline_builder
 
 
 router = Router()
@@ -20,34 +20,37 @@ def get_text(data: dict):
     
     photo_list = data.get('photo')
     if photo_list:
-        count = len(photo_list.split(','))
+        count = len(photo_list)
         text = f'{text}' \
                f"\nКол-во фотографий: {count}"
         
     file_list = data.get('file')
     if file_list:
-        count = len(file_list.split(','))
+        count = len(file_list)
         text = f'{text}' \
                f"\nКол-во файлов: {count}\n"
         
-    return f"{text}" \
-           f"\nВсе гуд?"
+    return text
 
 
 @router.callback_query(F.data == 'my_order')
-async def profile(callback_query: CallbackQuery, db: Database):
+async def profile(callback_query: CallbackQuery, user_service: UserService):
     user_id = callback_query.from_user.id
-    data = await db.get_data(user_id)
+    data = await user_service.get_order_data(user_id)
+
+    if not data:
+        await callback_query.answer('Нет заказов!')
+        return
 
     text = get_text(data[0])
 
-    await callback_query.message.edit_text(text=text, reply_markup=paginator())
+    await callback_query.message.edit_text(text=text, reply_markup=paginator_orders())
 
 
 @router.callback_query(Pagination.filter(F.action.in_(['prev', 'next'])))
-async def pagination_handler(call: CallbackQuery, callback_data: Pagination, db: Database):
+async def pagination_handler(call: CallbackQuery, callback_data: Pagination, user_service: UserService):
     user_id = call.from_user.id
-    data = await db.get_data(user_id)
+    data = await user_service.get_order_data(user_id)
 
     page_num = int(callback_data.page)
     page = page_num - 1 if page_num > 0 else 0
@@ -57,4 +60,4 @@ async def pagination_handler(call: CallbackQuery, callback_data: Pagination, db:
 
     text = get_text(data[page])
 
-    await call.message.edit_text(text=text, reply_markup=paginator(page))
+    await call.message.edit_text(text=text, reply_markup=paginator_orders(page))

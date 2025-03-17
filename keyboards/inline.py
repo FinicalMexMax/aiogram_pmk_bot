@@ -3,13 +3,13 @@ from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 back_main = InlineKeyboardMarkup(
     inline_keyboard=[
-        [InlineKeyboardButton(text='В меню', callback_data='back_main')]
+        [InlineKeyboardButton(text='Назад', callback_data='back_main')]
     ]
 )
 
 back_profile = InlineKeyboardMarkup(
     inline_keyboard=[
-        [InlineKeyboardButton(text='В меню', callback_data='back_profile')]
+        [InlineKeyboardButton(text='Назад', callback_data='back_profile')]
     ]
 )
 

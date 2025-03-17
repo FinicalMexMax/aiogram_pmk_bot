@@ -5,11 +5,11 @@ from aiogram.types import CallbackQuery, Message
 from aiogram.fsm.context import FSMContext
 from aiogram.utils.media_group import MediaGroupBuilder
 
-from utils.database import Database
+from utils.db.admin_manager import AdminManager
 from utils.states import SupportMessage
 
 from keyboards.inline import back_profile, skip
-from keyboards.builders import support_completed
+from keyboards.builders import support_completed, inline_builder
 
 
 router = Router()
@@ -35,7 +35,7 @@ async def support_message(
     await state.update_data(message=message.text.strip())
     await state.set_state(SupportMessage.photo)
     await message.answer(
-        text='И одно фото, если оно поможет решить твою проблему.', 
+        text='Можно прикрепить фото, если оно поможет решить проблему.', 
         reply_markup=skip
     )
 
@@ -61,7 +61,7 @@ async def support_photo(
     state: FSMContext
 ) -> None:
     photo_list = []
-    for photo in album[:1]:
+    for photo in album[:10]:
         photo_list.append(photo.photo[-1].file_id)
 
     await state.update_data(photo=photo_list)
@@ -85,7 +85,7 @@ async def support_photo(
 async def support_complete(
     callback_query: CallbackQuery,
     bot: Bot,
-    db: Database,
+    admin_manager: AdminManager,
     state: FSMContext
 ) -> None:
     user_id = callback_query.from_user.id
@@ -93,10 +93,24 @@ async def support_complete(
     data = await state.get_data()
     await state.clear()
 
-    text = await db.add_support_message(user_id, data)
+    text = await admin_manager.add_support_message(user_id, data)
 
-    for id in await db.get_admin_ids():
-        await bot.send_message(id, 'Новое обращение!')
+    count_support_message = await admin_manager.get_count_support_message()
+
+    btn = inline_builder(
+        text=[
+            f'Обращения - ({count_support_message})',
+            'Назад'
+        ],
+        callback_data=[
+            'get_suppoet_message',
+            'back_main'
+        ],
+        sizes=[1]
+    )
+
+    for id in await admin_manager.get_admin_ids():
+        await bot.send_message(id['user_id'], 'Новое обращение!', reply_markup=btn)
 
     await callback_query.message.edit_text(
         text=text,

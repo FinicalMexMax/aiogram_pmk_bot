@@ -15,10 +15,18 @@ class SupportMessage(StatesGroup):
     photo = State()
 
 
-class EditNick(StatesGroup):
+class EditName(StatesGroup):
     name = State()
+
+
+class EditGroupName(StatesGroup):
+    group_name = State()
 
 
 class Pay(StatesGroup):
     id = State()
     amount = State()
+
+
+class GetGroupName(StatesGroup):
+    group_name = State()
