@@ -27,10 +27,10 @@ from utils.db.main import Database
 from utils.parser import Parser
 from utils.states import GetGroupName
 
-# Настройка логирования
+
 logging.basicConfig(
     level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s",
+    format="%(asctime)s - %(levelname)s - %(message)s",
     handlers=[
         logging.StreamHandler(),
         logging.FileHandler("app.log", encoding="utf-8")

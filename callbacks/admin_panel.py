@@ -1,7 +1,5 @@
 import logging
 
-from aiocache import Cache
-
 from aiogram import F, Router
 from aiogram.types import Message, CallbackQuery
 from aiogram.fsm.context import FSMContext
@@ -14,29 +12,6 @@ from keyboards.inline import back_profile
 
 
 router = Router()
-
-cache = Cache.from_url("memory://")
-
-
-async def invalidate_cache_db():
-    try:
-        await cache.clear()
-
-        logging.info("Кэш успешно очищен.")
-        return "Кэш очищен"
-    except Exception as ex:
-        logging.error(f"Ошибка при очистке кеша: {ex}")
-        return str(ex)
-
-
-
-@router.callback_query(F.data == 'invalidate_cache')
-async def invalidate_cache(
-    callback_query: CallbackQuery,
-    db: Database
-):
-    response = await invalidate_cache_db(db)
-    await callback_query.answer(response)
 
 
 @router.callback_query(F.data == 'admin_panel')
