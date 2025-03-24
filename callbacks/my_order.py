@@ -3,7 +3,7 @@ from aiogram.types import CallbackQuery
 from aiogram.utils.media_group import MediaGroupBuilder
 
 from utils.sender import answer_text
-from utils.db.user_service import UserService
+from utils.db.main import Database
 
 from keyboards.builders import Pagination, paginator_orders, inline_builder
 
@@ -34,9 +34,9 @@ def get_text(data: dict):
 
 
 @router.callback_query(F.data == 'my_order')
-async def profile(callback_query: CallbackQuery, user_service: UserService):
+async def profile(callback_query: CallbackQuery, db: Database):
     user_id = callback_query.from_user.id
-    data = await user_service.get_order_data(user_id)
+    data = await db.get_order_data(user_id)
 
     if not data:
         await callback_query.answer('Нет заказов!')
@@ -48,9 +48,9 @@ async def profile(callback_query: CallbackQuery, user_service: UserService):
 
 
 @router.callback_query(Pagination.filter(F.action.in_(['prev', 'next'])))
-async def pagination_handler(call: CallbackQuery, callback_data: Pagination, user_service: UserService):
+async def pagination_handler(call: CallbackQuery, callback_data: Pagination, db: Database):
     user_id = call.from_user.id
-    data = await user_service.get_order_data(user_id)
+    data = await db.get_order_data(user_id)
 
     page_num = int(callback_data.page)
     page = page_num - 1 if page_num > 0 else 0

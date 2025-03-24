@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 
-from utils.db.schedule_manager import ScheduleManager
+from utils.db.main import Database
 
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -95,7 +95,7 @@ class Parser:
                     'subjects': subjects
                 }
             })
-            # logging.info(f"Расписание для группы {group_name} на дату {date} успешно получено.")
+            logging.info(f"Расписание для группы {group_name} на дату {date} успешно получено.")
 
     async def get_schedule(self) -> None:
         """Получение расписания для недели"""
@@ -111,9 +111,9 @@ class Parser:
         """Возвращает данные расписания в формате списка"""
         return self._schedule_data
 
-    async def save_db_data(self, schedule_manager: ScheduleManager) -> None:
+    async def save_db_data(self, db: Database) -> None:
         """Сохраняет расписание в базу данных"""
         if self._schedule_data:
-            await schedule_manager.add_schedule(data=self._schedule_data)
+            await db.add_schedule(data=self._schedule_data)
             logging.info(f"Данные расписания сохранены в БД, количество записей: {len(self._schedule_data)}.")
-            self._schedule_data.clear()  # Очищаем список после сохранения
+            self._schedule_data.clear()

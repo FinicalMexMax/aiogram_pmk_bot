@@ -5,7 +5,7 @@ from aiogram.types import CallbackQuery, Message
 from aiogram.fsm.context import FSMContext
 from aiogram.utils.media_group import MediaGroupBuilder
 
-from utils.db.admin_manager import AdminManager
+from utils.db.main import Database
 from utils.states import SupportMessage
 
 from keyboards.inline import back_profile, skip
@@ -85,7 +85,7 @@ async def support_photo(
 async def support_complete(
     callback_query: CallbackQuery,
     bot: Bot,
-    admin_manager: AdminManager,
+    db: Database,
     state: FSMContext
 ) -> None:
     user_id = callback_query.from_user.id
@@ -93,9 +93,9 @@ async def support_complete(
     data = await state.get_data()
     await state.clear()
 
-    text = await admin_manager.add_support_message(user_id, data)
+    text = await db.add_support_message(user_id, data)
 
-    count_support_message = await admin_manager.get_count_support_message()
+    count_support_message = await db.get_count_support_message()
 
     btn = inline_builder(
         text=[
@@ -109,7 +109,7 @@ async def support_complete(
         sizes=[1]
     )
 
-    for id in await admin_manager.get_admin_ids():
+    for id in await db.get_admin_ids():
         await bot.send_message(id['user_id'], 'Новое обращение!', reply_markup=btn)
 
     await callback_query.message.edit_text(

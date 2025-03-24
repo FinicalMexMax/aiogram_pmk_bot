@@ -19,7 +19,6 @@ cache = Cache.from_url("memory://")
 
 
 async def invalidate_cache_db():
-    """Принудительное обновление кеша"""
     try:
         await cache.clear()
 
@@ -68,7 +67,6 @@ async def get_support_messages(
     callback_query: CallbackQuery, 
     db: Database
 ) -> None:
-    # Получаем сообщения из базы данных
     support_messages = await db.get_support_messages()
     
     if support_messages:

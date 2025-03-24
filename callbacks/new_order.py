@@ -9,7 +9,7 @@ from keyboards.inline import back_order, skip, back_main, check_payment_kb
 
 from utils.states import NewOrder
 from utils.sender import answer_text, answer_file, answer_photo
-from utils.db.user_service import UserService
+from utils.db.main import Database
 
 
 router = Router()
@@ -141,7 +141,6 @@ async def order_price(message: Message, state: FSMContext):
     await state.update_data(price=int(text))
     data = await state.get_data()
 
-    # Подтверждение данных перед отправкой
     confirmation_text = (
         f"Тип работы: {data['type_work']}\n"
         f"Название работы: {data['title']}\n"
@@ -152,7 +151,6 @@ async def order_price(message: Message, state: FSMContext):
         "Все верно?"
     )
     
-    # Кнопки для подтверждения или изменения
     await message.answer(
         confirmation_text,
         reply_markup=inline_builder(
@@ -165,20 +163,20 @@ async def order_price(message: Message, state: FSMContext):
 
 @router.callback_query(F.data == 'edit_order')
 async def edit_order(callback_query: CallbackQuery, state: FSMContext):
-    # Переводим в нужное состояние для изменения данных
+
     data = await state.get_data()
     await callback_query.message.edit_text('Что ты хочешь изменить?')
-    await state.set_state(NewOrder.type_work)  # Например, начинаем с типа работы
+    await state.set_state(NewOrder.type_work)
 
 
 @router.callback_query(F.data == 'order_completed')
-async def order_completed(callback_query: CallbackQuery, user_service: UserService, state: FSMContext):
+async def order_completed(callback_query: CallbackQuery, db: Database, state: FSMContext):
     user_id = callback_query.from_user.id
     data = await state.get_data()
     data['customer'] = user_id
     price = data['price']
 
-    balance = await user_service.get_balance(user_id)
+    balance = await db.get_balance(user_id)
     if balance < price:
         price = price - balance
         pattern = dict(
@@ -199,7 +197,7 @@ async def order_completed(callback_query: CallbackQuery, user_service: UserServi
         data['status'] = 'Ожидание оплаты'
 
         await callback_query.message.answer(**pattern)
-        order_id = await user_service.add_order(data)
+        order_id = await db.add_order(data)
 
         data['reply_markup'] = check_payment_kb(order_id['order_id'])
 
@@ -207,7 +205,7 @@ async def order_completed(callback_query: CallbackQuery, user_service: UserServi
         return
 
     await state.clear()
-    answer_db = await user_service.add_order(data)
+    answer_db = await db.add_order(data)
     await callback_query.message.edit_text(
         text=answer_db['text'],
         reply_markup=back_main
