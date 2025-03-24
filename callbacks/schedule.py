@@ -8,8 +8,7 @@ from typing import Any, Dict, List
 
 from utils.db.main import Database
 
-from keyboards.builders import paginator_schedules, inline_builder
-from keyboards.inline import back_main
+from keyboards.builders import inline_builder
 
 
 router = Router()

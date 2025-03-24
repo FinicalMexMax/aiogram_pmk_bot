@@ -7,8 +7,7 @@ from aiogram.fsm.context import FSMContext
 from utils.db.main import Database
 from utils.parser import Parser
 
-from keyboards.builders import inline_builder, admin_panel_kb
-from keyboards.inline import back_profile
+from keyboards.builders import inline_builder, kb_admin_panel
 
 
 router = Router()
@@ -18,7 +17,7 @@ router = Router()
 async def admin_panel(callback_query: CallbackQuery):
     await callback_query.message.edit_text(
         text='admin panel',
-        reply_markup=admin_panel_kb
+        reply_markup=kb_admin_panel
     )
 
 
@@ -33,7 +32,7 @@ async def update_schedules(
 
     await callback_query.answer(
         text='Успешно обновлено.',
-        reply_markup=admin_panel_kb
+        reply_markup=kb_admin_panel
     )
 
 

@@ -9,7 +9,7 @@ from utils.db.main import Database
 
 from utils.states import EditName, EditGroupName
 from keyboards.builders import inline_builder, kb_groups
-from keyboards.inline import back_profile
+from keyboards.inline import kb_back_profile
 
 
 router = Router()
@@ -19,7 +19,8 @@ async def send_profile(
     user_id: int,
     db: Database,
     message: Message = None,
-    callback_query: CallbackQuery = None
+    callback_query: CallbackQuery = None,
+    clear_cache: bool = False
 ) -> None:
     """
     Универсальная функция для отображения профиля пользователя.
@@ -79,7 +80,7 @@ async def send_profile(
         await message.answer(text=text, reply_markup=btn)
 
 
-@router.callback_query(F.data.in_(['profile', 'back_profile', 'cancel_pay']))
+@router.callback_query(F.data.in_(['profile', 'back_profile']))
 async def profile(callback_query: CallbackQuery, db: Database) -> None:
     """
     Обработчик для отображения профиля через CallbackQuery.
@@ -113,7 +114,7 @@ async def update_role(callback_query: CallbackQuery, db: Database) -> None:
     await send_profile(user_id, db, callback_query=callback_query)
 
 
-@router.callback_query(F.data == 'update_name')
+@router.callback_query(F.data.in_('update_name'))
 async def update_name(callback_query: CallbackQuery, state: FSMContext) -> None:
     """
     Запускает процесс изменения ника.
@@ -121,7 +122,7 @@ async def update_name(callback_query: CallbackQuery, state: FSMContext) -> None:
     await state.set_state(EditName.name)
     await callback_query.message.edit_text(
         text='Введите новый ник:',
-        reply_markup=back_profile
+        reply_markup=kb_back_profile
     )
 
 
@@ -136,7 +137,7 @@ async def handle_update_nick(message: Message, db: Database, state: FSMContext) 
     black_list = ['админ', 'admin', 'администратор', 'administrator']
 
     if nick.lower() in black_list:
-        await message.answer('Ник не может быть таким!', reply_markup=back_profile)
+        await message.answer('Ник не может быть таким!', reply_markup=kb_back_profile)
         return
 
     await db.update_nick(user_id, nick)
@@ -144,7 +145,7 @@ async def handle_update_nick(message: Message, db: Database, state: FSMContext) 
     await send_profile(user_id, db, message=message)
 
 
-@router.callback_query(F.data == 'update_group')
+@router.callback_query(F.data.in_('update_group'))
 async def update_group_name(
     callback_query: CallbackQuery, 
     db: Database, 

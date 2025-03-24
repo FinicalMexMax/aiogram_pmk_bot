@@ -109,6 +109,17 @@ class Database(
             order_id INTEGER,
             datetime_create TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         );
+        CREATE TABLE IF NOT EXISTS transactions (
+            id SERIAL PRIMARY KEY,
+            user_id BIGINT,
+            amount NUMERIC(10, 2),
+            type VARCHAR(50),
+            order_id INTEGER,
+            related_user BIGINT,
+            datetime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (user_id) REFERENCES users(user_id),
+            FOREIGN KEY (order_id) REFERENCES orders(id)
+        );
         CREATE TABLE IF NOT EXISTS schedules (
             id SERIAL PRIMARY KEY,
             group_name VARCHAR(12),

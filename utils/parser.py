@@ -95,7 +95,7 @@ class Parser:
             self._schedule_data.append({
                 group_name: {
                     'formation': formation,
-                    'date': date,  # Используем объект datetime.date
+                    'date': date,
                     'weekday': weekday,
                     'start_time': start_time,
                     'alert': alert,

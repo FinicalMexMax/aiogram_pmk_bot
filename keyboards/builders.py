@@ -77,7 +77,7 @@ support_completed = inline_builder(
 )
 
 
-admin_panel_kb = inline_builder(
+kb_admin_panel = inline_builder(
     text=[
         'Пользователи', 'Уведомления',
         'Сбросить кэш', 'Обновить расписание',

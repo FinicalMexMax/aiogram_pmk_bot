@@ -5,7 +5,7 @@ from aiogram.types import Message, CallbackQuery
 from aiogram.fsm.context import FSMContext
 
 from keyboards.builders import inline_builder
-from keyboards.inline import back_order, skip, back_main, check_payment_kb
+from keyboards.inline import kb_back_order, kb_skip, kb_back_main, check_payment_kb
 
 from utils.states import NewOrder
 from utils.sender import answer_text, answer_file, answer_photo
@@ -63,10 +63,10 @@ async def order_create(callback_query: CallbackQuery, state: FSMContext):
 async def order_title(message: Message | CallbackQuery, state: FSMContext):
     if isinstance(message, CallbackQuery):
         await state.update_data(type_work=message.data)
-        await message.message.edit_text(text='Введи название работы', reply_markup=back_order)
+        await message.message.edit_text(text='Введи название работы', reply_markup=kb_back_order)
     else:
         await state.update_data(type_work=message.text)
-        await message.answer(text='Введи название работы', reply_markup=back_order)
+        await message.answer(text='Введи название работы', reply_markup=kb_back_order)
 
     await state.set_state(NewOrder.title)
 
@@ -75,7 +75,7 @@ async def order_title(message: Message | CallbackQuery, state: FSMContext):
 async def order_title(message: Message, state: FSMContext):
     await state.update_data(title=message.text)
     await state.set_state(NewOrder.about)
-    await message.answer(text='А теперь описание работы', reply_markup=skip)
+    await message.answer(text='А теперь описание работы', reply_markup=kb_skip)
 
 
 @router.callback_query(NewOrder.about, F.data == 'skip')
@@ -84,7 +84,7 @@ async def order_skip_photo(callback_query: CallbackQuery, state: FSMContext):
     await state.set_state(NewOrder.photo)
     await callback_query.message.edit_text(
         text='Ну а сейчас скинь фото, если это надо\nНо не больше 10', 
-        reply_markup=skip
+        reply_markup=kb_skip
     )
 
 
@@ -92,7 +92,7 @@ async def order_skip_photo(callback_query: CallbackQuery, state: FSMContext):
 async def order_about(message: Message, state: FSMContext):
     await state.update_data(about=message.text)
     await state.set_state(NewOrder.photo)
-    await message.answer(text='Ну а сейчас скинь фото, если это надо\nНо не больше 10', reply_markup=skip)
+    await message.answer(text='Ну а сейчас скинь фото, если это надо\nНо не больше 10', reply_markup=kb_skip)
 
 
 @router.message(NewOrder.photo, F.photo)
@@ -103,14 +103,14 @@ async def order_photo(message: Message, album: list[Message], state: FSMContext)
 
     await state.update_data(photo=photo_list)
     await state.set_state(NewOrder.file)
-    await message.answer(text='Файл-ы, так же если надо', reply_markup=skip)
+    await message.answer(text='Файл-ы, так же если надо', reply_markup=kb_skip)
 
 
 @router.callback_query(NewOrder.photo, F.data == 'skip')
 async def order_skip_photo(callback_query: CallbackQuery, state: FSMContext):
     await state.update_data(photo=[])
     await state.set_state(NewOrder.file)
-    await callback_query.message.edit_text(text='Файл-ы, так же если надо\nВсе так же, не больше 10', reply_markup=skip)
+    await callback_query.message.edit_text(text='Файл-ы, так же если надо\nВсе так же, не больше 10', reply_markup=kb_skip)
 
 
 @router.message(NewOrder.file, F.document)
@@ -121,14 +121,14 @@ async def order_file(message: Message | CallbackQuery, album: list[Message], sta
 
     await state.update_data(file=file_list)
     await state.set_state(NewOrder.price)
-    await message.answer(text='Сумма вознаграждения за работу', reply_markup=back_order)
+    await message.answer(text='Сумма вознаграждения за работу', reply_markup=kb_back_order)
 
 
 @router.callback_query(NewOrder.file, F.data == 'skip')
 async def order_skip_photo(callback_query: CallbackQuery, state: FSMContext):
     await state.update_data(file=[])
     await state.set_state(NewOrder.price)
-    await callback_query.message.edit_text(text='Сумма вознаграждения за работу', reply_markup=back_order)
+    await callback_query.message.edit_text(text='Сумма вознаграждения за работу', reply_markup=kb_back_order)
 
 
 @router.message(NewOrder.price, F.text)
@@ -208,5 +208,5 @@ async def order_completed(callback_query: CallbackQuery, db: Database, state: FS
     answer_db = await db.add_order(data)
     await callback_query.message.edit_text(
         text=answer_db['text'],
-        reply_markup=back_main
+        reply_markup=kb_back_main
     )

@@ -8,7 +8,7 @@ from aiogram.utils.media_group import MediaGroupBuilder
 from utils.db.main import Database
 from utils.states import SupportMessage
 
-from keyboards.inline import back_profile, skip
+from keyboards.inline import kb_back_profile, kb_skip
 from keyboards.builders import support_completed, inline_builder
 
 
@@ -23,7 +23,7 @@ async def support(
     await state.set_state(SupportMessage.message)
     await callback_query.message.edit_text(
         text='Что случилось?',
-        reply_markup=back_profile
+        reply_markup=kb_back_profile
     )
 
 
@@ -36,7 +36,7 @@ async def support_message(
     await state.set_state(SupportMessage.photo)
     await message.answer(
         text='Можно прикрепить фото, если оно поможет решить проблему.', 
-        reply_markup=skip
+        reply_markup=kb_skip
     )
 
 
@@ -114,5 +114,5 @@ async def support_complete(
 
     await callback_query.message.edit_text(
         text=text,
-        reply_markup=back_profile
+        reply_markup=kb_back_profile
     )

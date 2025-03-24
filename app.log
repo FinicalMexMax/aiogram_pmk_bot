@@ -790,3 +790,926 @@ TypeError: invalidate_cache_db() takes 0 positional arguments but 1 was given
 2025-03-24 19:36:26,919 - INFO - Update id=860671939 is handled. Duration 202 ms by bot id=7732473607
 2025-03-24 19:36:29,400 - INFO - Update id=860671940 is handled. Duration 201 ms by bot id=7732473607
 2025-03-24 19:36:30,037 - INFO - Update id=860671941 is handled. Duration 149 ms by bot id=7732473607
+2025-03-24 19:44:44,417 - INFO - Запуск бота...
+2025-03-24 19:44:45,660 - INFO - Подключение к базе данных установлено.
+2025-03-24 19:44:45,966 - INFO - Таблицы проверены/созданы.
+2025-03-24 19:44:46,267 - INFO - Индексы проверены/созданы.
+2025-03-24 19:44:46,268 - INFO - Запуск планировщика...
+2025-03-24 19:44:46,269 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-24 19:44:46,269 - INFO - Added job "run_parser" to job store "default"
+2025-03-24 19:44:46,269 - INFO - Scheduler started
+2025-03-24 19:44:46,627 - INFO - Start polling
+2025-03-24 19:44:46,733 - INFO - Run polling for bot @affine_test_bot id=7732473607 - 'affine'
+2025-03-24 19:44:51,279 - INFO - Update id=860671942 is handled. Duration 958 ms by bot id=7732473607
+2025-03-24 19:44:52,278 - INFO - Update id=860671943 is handled. Duration 590 ms by bot id=7732473607
+2025-03-24 19:44:52,988 - INFO - Update id=860671944 is handled. Duration 114 ms by bot id=7732473607
+2025-03-24 19:44:53,909 - INFO - Update id=860671945 is handled. Duration 152 ms by bot id=7732473607
+2025-03-24 19:44:54,630 - INFO - Update id=860671946 is handled. Duration 269 ms by bot id=7732473607
+2025-03-24 19:44:58,208 - INFO - Update id=860671947 is handled. Duration 115 ms by bot id=7732473607
+2025-03-24 19:44:59,260 - INFO - Получение названия группы пользователя.
+2025-03-24 19:44:59,709 - INFO - Получение расписания для группы ССА-2022-2 на 2025-03-24 из кэша или базы данных.
+2025-03-24 19:45:00,520 - INFO - Update id=860671948 is handled. Duration 1262 ms by bot id=7732473607
+2025-03-24 19:45:01,403 - INFO - Update id=860671949 is handled. Duration 116 ms by bot id=7732473607
+2025-03-24 19:45:02,232 - INFO - Update id=860671950 is handled. Duration 281 ms by bot id=7732473607
+2025-03-24 19:45:03,405 - INFO - Update id=860671951 is handled. Duration 115 ms by bot id=7732473607
+2025-03-24 21:29:40,233 - INFO - Запуск бота...
+2025-03-24 21:29:41,672 - INFO - Подключение к базе данных установлено.
+2025-03-24 21:29:42,200 - INFO - Таблицы проверены/созданы.
+2025-03-24 21:29:42,502 - INFO - Индексы проверены/созданы.
+2025-03-24 21:29:42,503 - INFO - Запуск планировщика...
+2025-03-24 21:29:42,504 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-24 21:29:42,505 - INFO - Added job "run_parser" to job store "default"
+2025-03-24 21:29:42,505 - INFO - Scheduler started
+2025-03-24 21:29:42,860 - INFO - Start polling
+2025-03-24 21:29:42,954 - INFO - Run polling for bot @affine_test_bot id=7732473607 - 'affine'
+2025-03-24 21:29:56,240 - INFO - Update id=860672097 is handled. Duration 992 ms by bot id=7732473607
+2025-03-24 21:30:00,662 - INFO - Update id=860672098 is handled. Duration 926 ms by bot id=7732473607
+2025-03-24 21:30:34,920 - INFO - Update id=860672099 is handled. Duration 297 ms by bot id=7732473607
+2025-03-24 21:30:37,992 - INFO - Операция пополнения для 5124967932 с id 5 создана.
+2025-03-24 21:30:38,624 - INFO - Update id=860672100 is handled. Duration 1420 ms by bot id=7732473607
+2025-03-24 21:31:17,869 - INFO - Update id=860672101 is handled. Duration 221 ms by bot id=7732473607
+2025-03-24 21:31:22,175 - INFO - Update id=860672102 is handled. Duration 4040 ms by bot id=7732473607
+2025-03-24 21:42:33,244 - INFO - Запуск бота...
+2025-03-24 21:42:34,812 - INFO - Подключение к базе данных установлено.
+2025-03-24 21:42:35,221 - INFO - Таблицы проверены/созданы.
+2025-03-24 21:42:35,733 - INFO - Индексы проверены/созданы.
+2025-03-24 21:42:35,734 - INFO - Запуск планировщика...
+2025-03-24 21:42:35,736 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-24 21:42:35,736 - INFO - Added job "run_parser" to job store "default"
+2025-03-24 21:42:35,736 - INFO - Scheduler started
+2025-03-24 21:42:36,088 - INFO - Start polling
+2025-03-24 21:42:36,179 - INFO - Run polling for bot @affine_test_bot id=7732473607 - 'affine'
+2025-03-24 21:42:38,769 - INFO - Update id=860672103 is handled. Duration 1174 ms by bot id=7732473607
+2025-03-24 21:42:40,580 - INFO - Update id=860672104 is handled. Duration 982 ms by bot id=7732473607
+2025-03-24 21:42:42,288 - INFO - Update id=860672105 is handled. Duration 566 ms by bot id=7732473607
+2025-03-24 21:50:42,853 - INFO - Запуск бота...
+2025-03-24 21:50:44,197 - INFO - Подключение к базе данных установлено.
+2025-03-24 21:50:44,606 - INFO - Таблицы проверены/созданы.
+2025-03-24 21:50:45,118 - INFO - Индексы проверены/созданы.
+2025-03-24 21:50:45,120 - INFO - Запуск планировщика...
+2025-03-24 21:50:45,121 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-24 21:50:45,121 - INFO - Added job "run_parser" to job store "default"
+2025-03-24 21:50:45,121 - INFO - Scheduler started
+2025-03-24 21:50:45,473 - INFO - Start polling
+2025-03-24 21:50:45,572 - INFO - Run polling for bot @affine_test_bot id=7732473607 - 'affine'
+2025-03-24 21:50:48,924 - INFO - Update id=860672106 is handled. Duration 1023 ms by bot id=7732473607
+2025-03-24 21:50:56,204 - INFO - Update id=860672107 is handled. Duration 762 ms by bot id=7732473607
+2025-03-24 21:51:00,184 - INFO - Update id=860672108 is handled. Duration 215 ms by bot id=7732473607
+2025-03-24 21:51:04,575 - INFO - Операция пополнения для 5124967932 с id 6 создана.
+2025-03-24 21:51:04,763 - INFO - Update id=860672109 is handled. Duration 781 ms by bot id=7732473607
+2025-03-24 21:52:16,361 - INFO - Update id=860672110 is handled. Duration 370 ms by bot id=7732473607
+2025-03-24 21:52:16,773 - INFO - Пользователь 5124967932 успешно оплатил 200 с ID платежа 6.
+2025-03-24 21:52:16,773 - INFO - Update id=860672111 is not handled. Duration 2 ms by bot id=7732473607
+2025-03-24 21:52:16,773 - ERROR - Cause exception while process update id=860672111 by bot id=7732473607
+AttributeError: 'Database' object has no attribute 'payment_service'
+Traceback (most recent call last):
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/middlewares/album.py", line 27, in __call__
+    await handler(message, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/payment.py", line 113, in successful_payment
+    await db.payment_service.payment_replenishment_operations(pay_id, total_amount)
+AttributeError: 'Database' object has no attribute 'payment_service'
+2025-03-24 21:53:17,918 - WARNING - Received SIGINT signal
+2025-03-24 21:53:17,919 - INFO - Polling stopped for bot @affine_test_bot id=7732473607 - 'affine'
+2025-03-24 21:53:17,919 - INFO - Polling stopped
+2025-03-24 21:53:18,415 - INFO - Подключение к базе данных закрыто.
+2025-03-24 21:53:18,416 - INFO - База данных закрыта. Бот остановлен.
+2025-03-24 21:53:21,631 - INFO - Запуск бота...
+2025-03-24 21:53:23,184 - INFO - Подключение к базе данных установлено.
+2025-03-24 21:53:23,637 - INFO - Таблицы проверены/созданы.
+2025-03-24 21:53:24,149 - INFO - Индексы проверены/созданы.
+2025-03-24 21:53:24,151 - INFO - Запуск планировщика...
+2025-03-24 21:53:24,152 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-24 21:53:24,153 - INFO - Added job "run_parser" to job store "default"
+2025-03-24 21:53:24,153 - INFO - Scheduler started
+2025-03-24 21:53:24,503 - INFO - Start polling
+2025-03-24 21:53:24,596 - INFO - Run polling for bot @affine_test_bot id=7732473607 - 'affine'
+2025-03-24 21:53:49,055 - INFO - Update id=860672112 is handled. Duration 1048 ms by bot id=7732473607
+2025-03-24 21:53:53,659 - INFO - Update id=860672113 is handled. Duration 1244 ms by bot id=7732473607
+2025-03-24 21:54:02,767 - INFO - Update id=860672114 is handled. Duration 135 ms by bot id=7732473607
+2025-03-24 21:54:15,557 - INFO - Операция пополнения для 5124967932 с id 7 создана.
+2025-03-24 21:54:15,710 - INFO - Update id=860672115 is handled. Duration 769 ms by bot id=7732473607
+2025-03-24 21:54:53,486 - INFO - Update id=860672116 is handled. Duration 130 ms by bot id=7732473607
+2025-03-24 21:54:53,859 - INFO - Пользователь 5124967932 успешно оплатил 200 с ID платежа 7.
+2025-03-24 21:54:57,370 - INFO - Update id=860672117 is handled. Duration 3512 ms by bot id=7732473607
+2025-03-24 21:56:49,382 - INFO - Update id=860672118 is handled. Duration 115 ms by bot id=7732473607
+2025-03-24 21:56:53,053 - INFO - Update id=860672119 is handled. Duration 409 ms by bot id=7732473607
+2025-03-24 21:56:57,455 - INFO - Операция пополнения для 5124967932 с id 8 создана.
+2025-03-24 21:56:57,866 - INFO - Update id=860672120 is handled. Duration 793 ms by bot id=7732473607
+2025-03-24 21:57:24,185 - INFO - Update id=860672121 is handled. Duration 513 ms by bot id=7732473607
+2025-03-24 21:57:24,397 - INFO - Пользователь 5124967932 успешно оплатил 300 с ID платежа 8.
+2025-03-24 21:57:26,641 - INFO - Update id=860672122 is handled. Duration 2245 ms by bot id=7732473607
+2025-03-24 21:57:38,725 - INFO - Update id=860672123 is handled. Duration 550 ms by bot id=7732473607
+2025-03-24 21:59:11,363 - INFO - Update id=860672124 is not handled. Duration 2 ms by bot id=7732473607
+2025-03-24 22:21:32,702 - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-03-24 22:21:32,702 - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7732473607)
+2025-03-24 22:21:43,990 - INFO - Connection established (tryings = 1, bot id = 7732473607)
+2025-03-24 22:22:55,410 - WARNING - Received SIGINT signal
+2025-03-24 22:22:55,410 - INFO - Polling stopped for bot @affine_test_bot id=7732473607 - 'affine'
+2025-03-24 22:22:55,411 - INFO - Polling stopped
+2025-03-24 22:22:55,662 - INFO - Подключение к базе данных закрыто.
+2025-03-24 22:22:55,662 - INFO - База данных закрыта. Бот остановлен.
+2025-03-24 22:25:20,849 - INFO - Запуск бота...
+2025-03-24 22:25:22,112 - INFO - Подключение к базе данных установлено.
+2025-03-24 22:25:22,413 - INFO - Таблицы проверены/созданы.
+2025-03-24 22:25:22,710 - INFO - Индексы проверены/созданы.
+2025-03-24 22:25:22,711 - INFO - Запуск планировщика...
+2025-03-24 22:25:22,712 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-24 22:25:22,712 - INFO - Added job "run_parser" to job store "default"
+2025-03-24 22:25:22,712 - INFO - Scheduler started
+2025-03-24 22:25:23,077 - INFO - Start polling
+2025-03-24 22:25:23,175 - INFO - Run polling for bot @affine_test_bot id=7732473607 - 'affine'
+2025-03-24 22:25:58,930 - INFO - Update id=860672125 is handled. Duration 798 ms by bot id=7732473607
+2025-03-24 22:29:47,196 - INFO - Запуск бота...
+2025-03-24 22:29:48,436 - INFO - Подключение к базе данных установлено.
+2025-03-24 22:29:48,737 - INFO - Таблицы проверены/созданы.
+2025-03-24 22:29:49,030 - INFO - Индексы проверены/созданы.
+2025-03-24 22:29:49,031 - INFO - Запуск планировщика...
+2025-03-24 22:29:49,032 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-24 22:29:49,032 - INFO - Added job "run_parser" to job store "default"
+2025-03-24 22:29:49,032 - INFO - Scheduler started
+2025-03-24 22:29:49,398 - INFO - Start polling
+2025-03-24 22:29:49,494 - INFO - Run polling for bot @affine_test_bot id=7732473607 - 'affine'
+2025-03-24 22:29:51,112 - INFO - Update id=860672126 is handled. Duration 756 ms by bot id=7732473607
+2025-03-24 22:29:54,136 - INFO - Update id=860672127 is handled. Duration 305 ms by bot id=7732473607
+2025-03-24 22:29:59,487 - INFO - Операция пополнения для 5124967932 с id 9 создана.
+2025-03-24 22:29:59,634 - INFO - Update id=860672128 is handled. Duration 643 ms by bot id=7732473607
+2025-03-24 22:30:22,299 - INFO - Update id=860672129 is handled. Duration 103 ms by bot id=7732473607
+2025-03-24 22:30:22,596 - INFO - Пользователь 5124967932 успешно оплатил платежа с ID 9.
+2025-03-24 22:30:24,680 - INFO - Update id=860672130 is handled. Duration 2085 ms by bot id=7732473607
+2025-03-24 22:30:26,688 - INFO - Update id=860672131 is handled. Duration 359 ms by bot id=7732473607
+2025-03-24 22:30:40,113 - INFO - Update id=860672132 is handled. Duration 236 ms by bot id=7732473607
+2025-03-24 22:30:43,457 - INFO - Операция пополнения для 5124967932 с id 10 создана.
+2025-03-24 22:30:43,683 - INFO - Update id=860672133 is handled. Duration 561 ms by bot id=7732473607
+2025-03-24 22:30:57,081 - INFO - Update id=860672134 is handled. Duration 144 ms by bot id=7732473607
+2025-03-24 22:30:57,268 - INFO - Пользователь 5124967932 успешно оплатил платежа с ID 10.
+2025-03-24 22:30:58,816 - INFO - Update id=860672135 is handled. Duration 1548 ms by bot id=7732473607
+2025-03-24 22:31:02,596 - INFO - Update id=860672136 is handled. Duration 279 ms by bot id=7732473607
+2025-03-24 22:31:41,164 - INFO - Update id=860672137 is handled. Duration 213 ms by bot id=7732473607
+2025-03-24 22:31:54,819 - INFO - Update id=860672138 is handled. Duration 123 ms by bot id=7732473607
+2025-03-24 22:32:06,478 - INFO - Операция пополнения для 5124967932 с id 11 создана.
+2025-03-24 22:32:06,753 - INFO - Update id=860672139 is handled. Duration 606 ms by bot id=7732473607
+2025-03-24 22:32:27,734 - INFO - Update id=860672140 is handled. Duration 110 ms by bot id=7732473607
+2025-03-24 22:32:28,310 - INFO - Пользователь 5124967932 успешно оплатил платежа с ID 11.
+2025-03-24 22:32:29,807 - INFO - Update id=860672141 is handled. Duration 1498 ms by bot id=7732473607
+2025-03-24 22:32:30,840 - INFO - Update id=860672142 is handled. Duration 117 ms by bot id=7732473607
+2025-03-24 22:35:37,460 - INFO - Запуск бота...
+2025-03-24 22:35:38,770 - INFO - Подключение к базе данных установлено.
+2025-03-24 22:35:39,098 - INFO - Таблицы проверены/созданы.
+2025-03-24 22:35:39,421 - INFO - Индексы проверены/созданы.
+2025-03-24 22:35:39,422 - INFO - Запуск планировщика...
+2025-03-24 22:35:39,423 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-24 22:35:39,423 - INFO - Added job "run_parser" to job store "default"
+2025-03-24 22:35:39,423 - INFO - Scheduler started
+2025-03-24 22:35:39,788 - INFO - Start polling
+2025-03-24 22:35:39,882 - INFO - Run polling for bot @affine_test_bot id=7732473607 - 'affine'
+2025-03-24 22:35:42,030 - INFO - Update id=860672143 is handled. Duration 359 ms by bot id=7732473607
+2025-03-24 22:35:45,912 - INFO - Операция пополнения для 5124967932 с id 12 создана.
+2025-03-24 22:35:46,069 - INFO - Update id=860672144 is handled. Duration 698 ms by bot id=7732473607
+2025-03-24 22:36:02,918 - INFO - Update id=860672145 is handled. Duration 340 ms by bot id=7732473607
+2025-03-24 22:36:03,215 - INFO - Пользователь 5124967932 успешно оплатил платежа с ID 12.
+2025-03-24 22:36:05,258 - INFO - Кэш для пользователя 5124967932 очищен.
+2025-03-24 22:36:05,468 - INFO - Update id=860672146 is handled. Duration 2253 ms by bot id=7732473607
+2025-03-24 22:36:06,800 - INFO - Update id=860672147 is handled. Duration 693 ms by bot id=7732473607
+2025-03-24 22:36:11,649 - INFO - Update id=860672148 is handled. Duration 155 ms by bot id=7732473607
+2025-03-24 22:36:15,382 - INFO - Операция пополнения для 5124967932 с id 13 создана.
+2025-03-24 22:36:15,645 - INFO - Update id=860672149 is not handled. Duration 635 ms by bot id=7732473607
+2025-03-24 22:36:15,645 - ERROR - Cause exception while process update id=860672149 by bot id=7732473607
+TelegramBadRequest: Telegram server says - Bad Request: CURRENCY_TOTAL_AMOUNT_INVALID
+Traceback (most recent call last):
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/middlewares/album.py", line 21, in __call__
+    await handler(message, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/payment.py", line 80, in message_payment
+    await send_payment(bot, user_amount, chat_id, user_id, db)
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/payment.py", line 38, in send_payment
+    await bot.send_invoice(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/bot.py", line 2781, in send_invoice
+    return await self(call, request_timeout=request_timeout)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/bot.py", line 498, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 185, in make_request
+    response = self.check_response(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: CURRENCY_TOTAL_AMOUNT_INVALID
+2025-03-24 22:36:32,290 - INFO - Update id=860672150 is handled. Duration 115 ms by bot id=7732473607
+2025-03-24 22:36:33,807 - INFO - Update id=860672151 is handled. Duration 116 ms by bot id=7732473607
+2025-03-24 22:36:36,731 - INFO - Операция пополнения для 5124967932 с id 14 создана.
+2025-03-24 22:36:37,099 - INFO - Update id=860672152 is handled. Duration 723 ms by bot id=7732473607
+2025-03-24 22:37:33,938 - INFO - Запуск бота...
+2025-03-24 22:37:35,219 - INFO - Подключение к базе данных установлено.
+2025-03-24 22:37:35,546 - INFO - Таблицы проверены/созданы.
+2025-03-24 22:37:35,869 - INFO - Индексы проверены/созданы.
+2025-03-24 22:37:35,870 - INFO - Запуск планировщика...
+2025-03-24 22:37:35,871 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-24 22:37:35,871 - INFO - Added job "run_parser" to job store "default"
+2025-03-24 22:37:35,871 - INFO - Scheduler started
+2025-03-24 22:37:36,235 - INFO - Start polling
+2025-03-24 22:37:36,331 - INFO - Run polling for bot @affine_test_bot id=7732473607 - 'affine'
+2025-03-24 22:38:29,390 - INFO - Запуск бота...
+2025-03-24 22:38:30,652 - INFO - Подключение к базе данных установлено.
+2025-03-24 22:38:30,960 - INFO - Таблицы проверены/созданы.
+2025-03-24 22:38:31,266 - INFO - Индексы проверены/созданы.
+2025-03-24 22:38:31,267 - INFO - Запуск планировщика...
+2025-03-24 22:38:31,268 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-24 22:38:31,268 - INFO - Added job "run_parser" to job store "default"
+2025-03-24 22:38:31,268 - INFO - Scheduler started
+2025-03-24 22:38:31,639 - INFO - Start polling
+2025-03-24 22:38:31,737 - INFO - Run polling for bot @affine_test_bot id=7732473607 - 'affine'
+2025-03-24 22:38:38,281 - INFO - Update id=860672153 is handled. Duration 787 ms by bot id=7732473607
+2025-03-24 22:38:39,816 - INFO - Update id=860672154 is handled. Duration 611 ms by bot id=7732473607
+2025-03-24 22:38:48,073 - INFO - Update id=860672155 is handled. Duration 146 ms by bot id=7732473607
+2025-03-24 22:38:51,043 - INFO - Операция пополнения для 5124967932 с id 15 создана.
+2025-03-24 22:38:51,280 - INFO - Update id=860672156 is handled. Duration 745 ms by bot id=7732473607
+2025-03-24 22:39:02,547 - INFO - Update id=860672157 is not handled. Duration 111 ms by bot id=7732473607
+2025-03-24 22:39:02,547 - ERROR - Cause exception while process update id=860672157 by bot id=7732473607
+TelegramBadRequest: Telegram server says - Bad Request: message can't be edited
+Traceback (most recent call last):
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/profile.py", line 88, in profile
+    await send_profile(callback_query.from_user.id, db, callback_query=callback_query)
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/profile.py", line 78, in send_profile
+    await callback_query.message.edit_text(text=text, reply_markup=btn)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/bot.py", line 498, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 185, in make_request
+    response = self.check_response(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message can't be edited
+2025-03-24 22:39:07,070 - INFO - Update id=860672158 is handled. Duration 231 ms by bot id=7732473607
+2025-03-24 22:39:08,182 - INFO - Update id=860672159 is handled. Duration 212 ms by bot id=7732473607
+2025-03-24 22:39:09,198 - INFO - Update id=860672160 is handled. Duration 233 ms by bot id=7732473607
+2025-03-24 22:39:11,851 - INFO - Операция пополнения для 5124967932 с id 16 создана.
+2025-03-24 22:39:12,028 - INFO - Update id=860672161 is not handled. Duration 541 ms by bot id=7732473607
+2025-03-24 22:39:12,028 - ERROR - Cause exception while process update id=860672161 by bot id=7732473607
+TelegramBadRequest: Telegram server says - Bad Request: CURRENCY_TOTAL_AMOUNT_INVALID
+Traceback (most recent call last):
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/middlewares/album.py", line 21, in __call__
+    await handler(message, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/payment.py", line 80, in message_payment
+    await send_payment(bot, user_amount, chat_id, user_id, db)
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/payment.py", line 38, in send_payment
+    await bot.send_invoice(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/bot.py", line 2781, in send_invoice
+    return await self(call, request_timeout=request_timeout)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/bot.py", line 498, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 185, in make_request
+    response = self.check_response(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: CURRENCY_TOTAL_AMOUNT_INVALID
+2025-03-24 22:39:14,672 - INFO - Update id=860672162 is handled. Duration 143 ms by bot id=7732473607
+2025-03-24 22:39:16,006 - INFO - Update id=860672163 is handled. Duration 145 ms by bot id=7732473607
+2025-03-24 22:39:20,382 - INFO - Операция пополнения для 5124967932 с id 17 создана.
+2025-03-24 22:39:20,502 - INFO - Update id=860672164 is not handled. Duration 463 ms by bot id=7732473607
+2025-03-24 22:39:20,502 - ERROR - Cause exception while process update id=860672164 by bot id=7732473607
+TelegramBadRequest: Telegram server says - Bad Request: CURRENCY_TOTAL_AMOUNT_INVALID
+Traceback (most recent call last):
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/middlewares/album.py", line 21, in __call__
+    await handler(message, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/payment.py", line 80, in message_payment
+    await send_payment(bot, user_amount, chat_id, user_id, db)
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/payment.py", line 38, in send_payment
+    await bot.send_invoice(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/bot.py", line 2781, in send_invoice
+    return await self(call, request_timeout=request_timeout)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/bot.py", line 498, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 185, in make_request
+    response = self.check_response(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: CURRENCY_TOTAL_AMOUNT_INVALID
+2025-03-24 22:39:23,396 - INFO - Update id=860672165 is handled. Duration 578 ms by bot id=7732473607
+2025-03-24 22:39:24,368 - INFO - Update id=860672166 is handled. Duration 224 ms by bot id=7732473607
+2025-03-24 22:39:27,142 - INFO - Операция пополнения для 5124967932 с id 18 создана.
+2025-03-24 22:39:27,385 - INFO - Update id=860672167 is not handled. Duration 596 ms by bot id=7732473607
+2025-03-24 22:39:27,386 - ERROR - Cause exception while process update id=860672167 by bot id=7732473607
+TelegramBadRequest: Telegram server says - Bad Request: CURRENCY_TOTAL_AMOUNT_INVALID
+Traceback (most recent call last):
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/middlewares/album.py", line 21, in __call__
+    await handler(message, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/payment.py", line 80, in message_payment
+    await send_payment(bot, user_amount, chat_id, user_id, db)
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/payment.py", line 38, in send_payment
+    await bot.send_invoice(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/bot.py", line 2781, in send_invoice
+    return await self(call, request_timeout=request_timeout)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/bot.py", line 498, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 185, in make_request
+    response = self.check_response(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: CURRENCY_TOTAL_AMOUNT_INVALID
+2025-03-24 22:39:29,034 - INFO - Update id=860672168 is handled. Duration 301 ms by bot id=7732473607
+2025-03-24 22:39:30,349 - INFO - Update id=860672169 is handled. Duration 186 ms by bot id=7732473607
+2025-03-24 22:39:33,475 - INFO - Операция пополнения для 5124967932 с id 19 создана.
+2025-03-24 22:39:33,696 - INFO - Update id=860672170 is not handled. Duration 566 ms by bot id=7732473607
+2025-03-24 22:39:33,696 - ERROR - Cause exception while process update id=860672170 by bot id=7732473607
+TelegramBadRequest: Telegram server says - Bad Request: CURRENCY_TOTAL_AMOUNT_INVALID
+Traceback (most recent call last):
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/middlewares/album.py", line 21, in __call__
+    await handler(message, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/payment.py", line 80, in message_payment
+    await send_payment(bot, user_amount, chat_id, user_id, db)
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/payment.py", line 38, in send_payment
+    await bot.send_invoice(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/bot.py", line 2781, in send_invoice
+    return await self(call, request_timeout=request_timeout)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/bot.py", line 498, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 185, in make_request
+    response = self.check_response(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: CURRENCY_TOTAL_AMOUNT_INVALID
+2025-03-24 22:39:35,890 - INFO - Update id=860672171 is handled. Duration 376 ms by bot id=7732473607
+2025-03-24 22:39:37,116 - INFO - Update id=860672172 is handled. Duration 366 ms by bot id=7732473607
+2025-03-24 22:39:46,754 - INFO - Операция пополнения для 5124967932 с id 20 создана.
+2025-03-24 22:39:47,484 - INFO - Update id=860672173 is not handled. Duration 1067 ms by bot id=7732473607
+2025-03-24 22:39:47,485 - ERROR - Cause exception while process update id=860672173 by bot id=7732473607
+TelegramBadRequest: Telegram server says - Bad Request: CURRENCY_TOTAL_AMOUNT_INVALID
+Traceback (most recent call last):
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/middlewares/album.py", line 21, in __call__
+    await handler(message, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/payment.py", line 80, in message_payment
+    await send_payment(bot, user_amount, chat_id, user_id, db)
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/payment.py", line 38, in send_payment
+    await bot.send_invoice(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/bot.py", line 2781, in send_invoice
+    return await self(call, request_timeout=request_timeout)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/bot.py", line 498, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 185, in make_request
+    response = self.check_response(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: CURRENCY_TOTAL_AMOUNT_INVALID
+2025-03-24 22:39:48,812 - INFO - Update id=860672174 is handled. Duration 144 ms by bot id=7732473607
+2025-03-24 22:39:50,335 - INFO - Update id=860672175 is handled. Duration 120 ms by bot id=7732473607
+2025-03-24 22:39:53,718 - INFO - Операция пополнения для 5124967932 с id 21 создана.
+2025-03-24 22:39:53,919 - INFO - Update id=860672176 is handled. Duration 545 ms by bot id=7732473607
+2025-03-24 22:39:55,501 - INFO - Update id=860672177 is not handled. Duration 108 ms by bot id=7732473607
+2025-03-24 22:39:55,501 - ERROR - Cause exception while process update id=860672177 by bot id=7732473607
+TelegramBadRequest: Telegram server says - Bad Request: message can't be edited
+Traceback (most recent call last):
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/profile.py", line 88, in profile
+    await send_profile(callback_query.from_user.id, db, callback_query=callback_query)
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/profile.py", line 78, in send_profile
+    await callback_query.message.edit_text(text=text, reply_markup=btn)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/bot.py", line 498, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 185, in make_request
+    response = self.check_response(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message can't be edited
+2025-03-24 22:39:58,100 - INFO - Update id=860672178 is handled. Duration 211 ms by bot id=7732473607
+2025-03-24 22:39:59,573 - INFO - Update id=860672179 is handled. Duration 147 ms by bot id=7732473607
+2025-03-24 22:40:00,870 - INFO - Update id=860672180 is handled. Duration 155 ms by bot id=7732473607
+2025-03-24 22:40:05,493 - INFO - Операция пополнения для 5124967932 с id 22 создана.
+2025-03-24 22:40:05,786 - INFO - Update id=860672181 is handled. Duration 649 ms by bot id=7732473607
+2025-03-24 22:40:08,488 - INFO - Update id=860672182 is not handled. Duration 97 ms by bot id=7732473607
+2025-03-24 22:40:08,488 - ERROR - Cause exception while process update id=860672182 by bot id=7732473607
+TelegramBadRequest: Telegram server says - Bad Request: message can't be edited
+Traceback (most recent call last):
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/profile.py", line 88, in profile
+    await send_profile(callback_query.from_user.id, db, callback_query=callback_query)
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/profile.py", line 78, in send_profile
+    await callback_query.message.edit_text(text=text, reply_markup=btn)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/bot.py", line 498, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 185, in make_request
+    response = self.check_response(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message can't be edited
+2025-03-24 22:40:35,425 - INFO - Запуск бота...
+2025-03-24 22:40:36,685 - INFO - Подключение к базе данных установлено.
+2025-03-24 22:40:36,996 - INFO - Таблицы проверены/созданы.
+2025-03-24 22:40:37,303 - INFO - Индексы проверены/созданы.
+2025-03-24 22:40:37,304 - INFO - Запуск планировщика...
+2025-03-24 22:40:37,305 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-24 22:40:37,306 - INFO - Added job "run_parser" to job store "default"
+2025-03-24 22:40:37,306 - INFO - Scheduler started
+2025-03-24 22:40:37,673 - INFO - Start polling
+2025-03-24 22:40:37,768 - INFO - Run polling for bot @affine_test_bot id=7732473607 - 'affine'
+2025-03-24 22:40:42,549 - INFO - Update id=860672183 is handled. Duration 911 ms by bot id=7732473607
+2025-03-24 22:40:44,139 - INFO - Update id=860672184 is handled. Duration 664 ms by bot id=7732473607
+2025-03-24 22:40:46,488 - INFO - Update id=860672185 is handled. Duration 126 ms by bot id=7732473607
+2025-03-24 22:40:50,083 - INFO - Операция пополнения для 5124967932 с id 23 создана.
+2025-03-24 22:40:50,454 - INFO - Update id=860672186 is not handled. Duration 882 ms by bot id=7732473607
+2025-03-24 22:40:50,455 - ERROR - Cause exception while process update id=860672186 by bot id=7732473607
+TelegramBadRequest: Telegram server says - Bad Request: CURRENCY_TOTAL_AMOUNT_INVALID
+Traceback (most recent call last):
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/middlewares/album.py", line 21, in __call__
+    await handler(message, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/payment.py", line 80, in message_payment
+    await send_payment(bot, user_amount, chat_id, user_id, db)
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/payment.py", line 38, in send_payment
+    await bot.send_invoice(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/bot.py", line 2781, in send_invoice
+    return await self(call, request_timeout=request_timeout)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/bot.py", line 498, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 185, in make_request
+    response = self.check_response(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: CURRENCY_TOTAL_AMOUNT_INVALID
+2025-03-24 22:42:24,665 - INFO - Запуск бота...
+2025-03-24 22:42:25,930 - INFO - Подключение к базе данных установлено.
+2025-03-24 22:42:26,244 - INFO - Таблицы проверены/созданы.
+2025-03-24 22:42:26,554 - INFO - Индексы проверены/созданы.
+2025-03-24 22:42:26,555 - INFO - Запуск планировщика...
+2025-03-24 22:42:26,556 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-24 22:42:26,556 - INFO - Added job "run_parser" to job store "default"
+2025-03-24 22:42:26,556 - INFO - Scheduler started
+2025-03-24 22:42:26,922 - INFO - Start polling
+2025-03-24 22:42:27,018 - INFO - Run polling for bot @affine_test_bot id=7732473607 - 'affine'
+2025-03-24 22:42:30,167 - INFO - Update id=860672187 is handled. Duration 874 ms by bot id=7732473607
+2025-03-24 22:42:31,768 - INFO - Update id=860672188 is handled. Duration 856 ms by bot id=7732473607
+2025-03-24 22:42:32,779 - INFO - Update id=860672189 is handled. Duration 249 ms by bot id=7732473607
+2025-03-24 22:42:34,407 - INFO - Update id=860672190 is handled. Duration 208 ms by bot id=7732473607
+2025-03-24 22:42:39,310 - INFO - Операция пополнения для 5124967932 с id 24 создана.
+2025-03-24 22:42:39,513 - INFO - Update id=860672191 is handled. Duration 707 ms by bot id=7732473607
+2025-03-24 22:42:43,257 - INFO - Update id=860672192 is not handled. Duration 97 ms by bot id=7732473607
+2025-03-24 22:42:43,257 - ERROR - Cause exception while process update id=860672192 by bot id=7732473607
+TelegramBadRequest: Telegram server says - Bad Request: message can't be edited
+Traceback (most recent call last):
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/profile.py", line 88, in profile
+    await send_profile(callback_query.from_user.id, db, callback_query=callback_query)
+  File "/home/john/Documents/code/python/aiogram_pmk_bot/callbacks/profile.py", line 78, in send_profile
+    await callback_query.message.edit_text(text=text, reply_markup=btn)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/bot.py", line 498, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 185, in make_request
+    response = self.check_response(
+  File "/home/john/.cache/pypoetry/virtualenvs/aiogram-pmk-bot-L9WIEWYH-py3.10/lib/python3.10/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message can't be edited
+2025-03-24 22:42:46,169 - INFO - Update id=860672193 is handled. Duration 226 ms by bot id=7732473607
+2025-03-24 22:42:47,584 - INFO - Получение названия группы пользователя.
+2025-03-24 22:42:48,046 - INFO - Получение расписания для группы ССА-2022-2 на 2025-03-24 из кэша или базы данных.
+2025-03-24 22:42:48,711 - INFO - Update id=860672194 is handled. Duration 1129 ms by bot id=7732473607
+2025-03-24 22:42:49,720 - INFO - Update id=860672195 is handled. Duration 325 ms by bot id=7732473607
+2025-03-24 22:42:50,615 - INFO - Update id=860672196 is handled. Duration 132 ms by bot id=7732473607
+2025-03-24 22:42:52,725 - INFO - Update id=860672197 is handled. Duration 140 ms by bot id=7732473607
+2025-03-24 22:42:55,568 - INFO - Операция пополнения для 5124967932 с id 25 создана.
+2025-03-24 22:42:55,779 - INFO - Update id=860672198 is handled. Duration 578 ms by bot id=7732473607
+2025-03-24 22:43:11,333 - INFO - Update id=860672199 is handled. Duration 170 ms by bot id=7732473607
+2025-03-24 22:43:11,596 - INFO - Пользователь 5124967932 успешно оплатил платежа с ID 25.
+2025-03-24 22:43:13,617 - INFO - Кэш для пользователя 5124967932 очищен.
+2025-03-24 22:43:13,978 - INFO - Update id=860672200 is handled. Duration 2383 ms by bot id=7732473607
+2025-03-24 22:43:15,627 - INFO - Update id=860672201 is handled. Duration 691 ms by bot id=7732473607
+2025-03-24 22:45:29,085 - INFO - Update id=860672202 is handled. Duration 532 ms by bot id=7732473607
+2025-03-24 22:45:29,691 - INFO - Получение названия группы пользователя.
+2025-03-24 22:45:30,134 - INFO - Update id=860672203 is handled. Duration 445 ms by bot id=7732473607
+2025-03-24 22:45:36,601 - INFO - Получение доступных дат из кэша или базы данных.
+2025-03-24 22:45:37,406 - INFO - Update id=860672204 is handled. Duration 807 ms by bot id=7732473607
+2025-03-24 22:45:39,253 - INFO - Получение расписания для группы ССА-2022-2 на 2025-03-25 из кэша или базы данных.
+2025-03-24 22:45:39,695 - INFO - Update id=860672205 is handled. Duration 445 ms by bot id=7732473607
+2025-03-24 22:45:40,455 - INFO - Update id=860672206 is handled. Duration 181 ms by bot id=7732473607
+2025-03-24 22:45:41,794 - INFO - Update id=860672207 is handled. Duration 137 ms by bot id=7732473607
+2025-03-24 22:45:42,568 - INFO - Update id=860672208 is handled. Duration 187 ms by bot id=7732473607
+2025-03-24 22:45:43,184 - INFO - Получение расписания для группы ССА-2022-2 на 2025-03-26 из кэша или базы данных.
+2025-03-24 22:45:43,729 - INFO - Update id=860672209 is handled. Duration 547 ms by bot id=7732473607
+2025-03-24 22:45:44,345 - INFO - Update id=860672210 is handled. Duration 170 ms by bot id=7732473607
+2025-03-24 22:45:45,012 - INFO - Update id=860672211 is handled. Duration 176 ms by bot id=7732473607
+2025-03-24 22:45:48,858 - INFO - Update id=860672212 is handled. Duration 125 ms by bot id=7732473607
+2025-03-24 22:45:50,293 - INFO - Update id=860672213 is handled. Duration 249 ms by bot id=7732473607
+2025-03-24 22:45:51,136 - INFO - Update id=860672214 is handled. Duration 202 ms by bot id=7732473607
+2025-03-24 22:45:51,811 - INFO - Получение расписания для группы ССА-2022-2 на 2025-03-28 из кэша или базы данных.
+2025-03-24 22:45:52,415 - INFO - Update id=860672215 is handled. Duration 605 ms by bot id=7732473607
+2025-03-24 22:45:53,222 - INFO - Update id=860672216 is handled. Duration 299 ms by bot id=7732473607
+2025-03-24 22:45:54,428 - INFO - Update id=860672217 is handled. Duration 179 ms by bot id=7732473607
+2025-03-24 22:45:58,658 - INFO - Получение alert для 2025-03-24 из кэша или базы данных.
+2025-03-24 22:45:59,239 - INFO - Update id=860672218 is handled. Duration 584 ms by bot id=7732473607
+2025-03-24 22:46:00,252 - INFO - Update id=860672219 is handled. Duration 186 ms by bot id=7732473607
+2025-03-24 22:46:01,432 - INFO - Update id=860672220 is handled. Duration 183 ms by bot id=7732473607
+2025-03-24 22:46:02,512 - INFO - Update id=860672221 is handled. Duration 219 ms by bot id=7732473607
+2025-03-24 22:46:03,646 - INFO - Update id=860672222 is handled. Duration 134 ms by bot id=7732473607
+2025-03-24 22:46:16,335 - INFO - Update id=860672223 is handled. Duration 266 ms by bot id=7732473607
+2025-03-24 22:46:32,555 - INFO - Update id=860672224 is handled. Duration 199 ms by bot id=7732473607
+2025-03-24 22:46:33,959 - INFO - Update id=860672225 is handled. Duration 238 ms by bot id=7732473607
+2025-03-24 22:46:38,807 - INFO - Update id=860672226 is handled. Duration 206 ms by bot id=7732473607
+2025-03-24 22:46:42,269 - WARNING - Received SIGINT signal
+2025-03-24 22:46:42,270 - INFO - Polling stopped for bot @affine_test_bot id=7732473607 - 'affine'
+2025-03-24 22:46:42,270 - INFO - Polling stopped
+2025-03-24 22:46:42,685 - INFO - Подключение к базе данных закрыто.
+2025-03-24 22:46:42,685 - INFO - База данных закрыта. Бот остановлен.
