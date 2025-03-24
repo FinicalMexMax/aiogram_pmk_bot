@@ -37,7 +37,7 @@ class ScheduleManager:
                         group_name, 
                         schedule['date'], 
                         schedule['weekday'], 
-                        schedule['formed'],
+                        schedule['formation'],
                         schedule['alert'], 
                         schedule['start_time'], 
                         json.dumps(schedule['subjects'])

@@ -71,8 +71,8 @@ class Parser:
             logging.info(f"Для даты {date} отсутствует расписание.")
             return
 
-        formed_elem = soup.find('div', class_='text-muted')
-        formed = self.extract_text_from_soup(formed_elem.find('small') if formed_elem else None, None)
+        formation_elem = soup.find('div', class_='text-muted')
+        formation = self.extract_text_from_soup(formation_elem.find('small') if formation_elem else None, None)
 
         weekday = date.strftime('%A')
 
@@ -87,7 +87,7 @@ class Parser:
             group_name, start_time, subjects = self.parse_schedule_card(card)
             self._schedule_data.append({
                 group_name: {
-                    'formed': formed,
+                    'formation': formation,
                     'date': date,  # Используем объект datetime.date
                     'weekday': weekday,
                     'start_time': start_time,

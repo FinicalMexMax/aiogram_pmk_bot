@@ -6,8 +6,7 @@ from datetime import datetime, timedelta
 
 from typing import Any, Dict, List
 
-from utils.db.schedule_manager import ScheduleManager
-from utils.db.user_service import UserService
+from utils.db.main import Database
 
 from keyboards.builders import paginator_schedules, inline_builder
 from keyboards.inline import back_main
@@ -66,12 +65,12 @@ async def send_schedule_data(
 @router.callback_query(F.data.startswith('schedule_alert'))
 async def schedule_edit_date(
     callback_query: CallbackQuery,
-    schedule_manager: ScheduleManager
+    db: Database
 ):
     str_date = callback_query.data.split('|')[-1]
     date = datetime.strptime(str_date, '%Y-%m-%d').date()
 
-    alert = await schedule_manager.get_schedule_alert(date)
+    alert = await db.get_schedule_alert(date)
     await callback_query.message.edit_text(
         text=alert, 
         reply_markup=inline_builder(
@@ -84,9 +83,9 @@ async def schedule_edit_date(
 @router.callback_query(F.data.startswith('schedule_edit_date'))
 async def schedule_edit_date(
     callback_query: CallbackQuery,
-    schedule_manager: ScheduleManager
+    db: Database
 ):
-    date_list = await schedule_manager.get_schedule_date()
+    date_list = await db.get_schedule_date()
 
     date = callback_query.data.split('|')[-1]
 
@@ -111,8 +110,7 @@ async def schedule_edit_date(
 @router.callback_query(F.data.startswith('schedules'))
 async def get_schedules(
     callback_query: CallbackQuery, 
-    schedule_manager: ScheduleManager,
-    user_service: UserService
+    db: Database
 ):
     user_id = callback_query.from_user.id
     
@@ -121,8 +119,8 @@ async def get_schedules(
     if isinstance(date, str):
         date = datetime.strptime(date, '%Y-%m-%d').date()
 
-    group_name = await user_service.get_group(user_id)
-    schedule_data = await schedule_manager.get_schedule_by_group(group_name, date)
+    group_name = await db.get_group(user_id)
+    schedule_data = await db.get_schedule_by_group(group_name, date)
     await send_schedule_data(
         callback_query=callback_query,
         schedule_data=schedule_data

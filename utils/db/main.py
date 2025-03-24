@@ -8,6 +8,12 @@ from typing import Any, Dict, List, Optional
 import asyncpg
 from asyncpg import Pool
 
+from utils.db.user_service import UserService
+from utils.db.payment_service import PaymentService
+from utils.db.schedule_manager import ScheduleManager
+from utils.db.order_manager import OrderManager
+from utils.db.admin_manager import AdminManager
+
 from aiocache import cached, SimpleMemoryCache
 from aiocache.serializers import PickleSerializer
 
@@ -22,8 +28,16 @@ logging.basicConfig(
 )
 
 
-class Database:
-    pool: Pool
+class Database(
+    UserService,
+    PaymentService,
+    ScheduleManager,
+    OrderManager,
+    AdminManager
+):
+    def __init__(self, pool: Pool = None):
+        self.pool = pool
+        super().__init__(self.pool)
 
     async def connect(self) -> None:
         """
@@ -35,6 +49,9 @@ class Database:
             user=getenv('DB_USER'),
             password=getenv("DB_PASSWORD")
         )
+
+        super().__init__(self.pool)
+
         logging.info("Подключение к базе данных установлено.")
 
     async def create_and_check_table(self) -> None:

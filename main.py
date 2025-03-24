@@ -21,11 +21,6 @@ from callbacks.schedule import router as schedule_router
 
 from keyboards.builders import inline_builder, kb_groups
 from utils.db.main import Database
-from utils.db.user_service import UserService
-from utils.db.payment_service import PaymentService
-from utils.db.schedule_manager import ScheduleManager
-from utils.db.order_manager import OrderManager
-from utils.db.admin_manager import AdminManager
 
 from utils.states import GetGroupName
 from utils.parser import Parser
@@ -37,11 +32,11 @@ load_dotenv()
 
 async def welcome_message(
     message: Message | CallbackQuery,
-    user_service: UserService,
+    db: Database,
     group: str = None
 ):
     if group:
-        await user_service.add_user(
+        await db.add_user(
             user_id=message.from_user.id,
             user_name=message.from_user.username,
             group_name=group
@@ -66,24 +61,23 @@ async def welcome_message(
 @router.callback_query(F.data == 'back_main')
 async def main_menu(
     message: Message | CallbackQuery,
-    user_service: UserService,
-    schedule_manager: ScheduleManager,
+    db: Database,
     state: FSMContext
 ):
     user_id = message.from_user.id
 
-    if not await user_service.user_exists(user_id):
-        groups = await schedule_manager.get_groups_name()
+    if not await db.user_exists(user_id):
+        groups = await db.get_groups_name()
         await message.answer('Из какой ты группы?', reply_markup=kb_groups(groups))
         return await state.set_state(GetGroupName.group_name)
 
-    await welcome_message(message, user_service)
+    await welcome_message(message, db)
 
 
 @router.callback_query(GetGroupName.group_name, F.data)
-async def get_group_name(callback_query: CallbackQuery, state: FSMContext, user_service: UserService):
+async def get_group_name(callback_query: CallbackQuery, state: FSMContext, db: Database):
     await state.clear()
-    await welcome_message(callback_query, user_service, callback_query.data)
+    await welcome_message(callback_query, db, callback_query.data)
 
 
 async def main():
@@ -93,12 +87,6 @@ async def main():
 
     await db.connect()
     await db.create_and_check_table()
-
-    user_service = UserService(db.pool)
-    schedule_manager = ScheduleManager(db.pool)
-    order_manager = OrderManager(db.pool)
-    payment_service = PaymentService(db.pool)
-    admin_manager = AdminManager(db.pool)
 
     dp.message.middleware(SomeMiddleware())
     dp.pre_checkout_query.register(pre_checkout_query)
@@ -111,11 +99,7 @@ async def main():
     await bot.delete_webhook(True)
     await dp.start_polling(
         bot,
-        user_service=user_service,
-        admin_manager=admin_manager,
-        schedule_manager=schedule_manager,
-        order_manager=order_manager,
-        payment_service=payment_service
+        db=db
     )
 
     await db.close()
