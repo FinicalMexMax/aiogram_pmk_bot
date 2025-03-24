@@ -1740,3 +1740,26 @@ aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: messa
 2025-03-24 22:57:32,808 - INFO - Polling stopped
 2025-03-24 22:57:33,221 - INFO - Подключение к базе данных закрыто.
 2025-03-24 22:57:33,221 - INFO - База данных закрыта. Бот остановлен.
+2025-03-24 23:07:24,039 - INFO - Запуск бота...
+2025-03-24 23:07:25,274 - INFO - Подключение к базе данных установлено.
+2025-03-24 23:07:25,572 - INFO - Таблицы проверены/созданы.
+2025-03-24 23:07:25,868 - INFO - Индексы проверены/созданы.
+2025-03-24 23:07:25,868 - INFO - Запуск планировщика...
+2025-03-24 23:07:25,869 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-24 23:07:25,870 - INFO - Added job "run_parser" to job store "default"
+2025-03-24 23:07:25,870 - INFO - Scheduler started
+2025-03-24 23:07:26,228 - INFO - Start polling
+2025-03-24 23:07:26,323 - INFO - Run polling for bot @affine_test_bot id=7732473607 - 'affine'
+2025-03-24 23:07:30,270 - INFO - Update id=860672234 is handled. Duration 935 ms by bot id=7732473607
+2025-03-24 23:07:34,911 - INFO - Update id=860672235 is handled. Duration 287 ms by bot id=7732473607
+2025-03-24 23:07:40,486 - INFO - Update id=860672236 is handled. Duration 269 ms by bot id=7732473607
+2025-03-24 23:07:42,587 - INFO - Update id=860672237 is handled. Duration 301 ms by bot id=7732473607
+2025-03-24 23:07:44,174 - INFO - Сообщение поддержки от пользователя 5124967932 добавлено.
+2025-03-24 23:07:44,614 - INFO - Количество незакрытых сообщений поддержки: 2
+2025-03-24 23:07:45,054 - INFO - Список администраторов: [<Record user_id=5124967932>]
+2025-03-24 23:07:45,554 - INFO - Update id=860672238 is handled. Duration 1877 ms by bot id=7732473607
+2025-03-24 23:08:58,540 - WARNING - Received SIGINT signal
+2025-03-24 23:08:58,541 - INFO - Polling stopped for bot @affine_test_bot id=7732473607 - 'affine'
+2025-03-24 23:08:58,541 - INFO - Polling stopped
+2025-03-24 23:08:58,952 - INFO - Подключение к базе данных закрыто.
+2025-03-24 23:08:58,952 - INFO - База данных закрыта. Бот остановлен.

@@ -27,8 +27,15 @@ class AdminManager:
         """
         Возвращает количество незакрытых сообщений поддержки.
         """
-        count = await self.pool.fetchval(
+        result = await self.pool.fetchval(
             "SELECT COUNT(id) FROM support_message WHERE status!='закрыт'"
         )
-        logging.info(f"Количество незакрытых сообщений поддержки: {count}")
-        return count
+        logging.info(f"Количество незакрытых сообщений поддержки: {result}")
+        return result
+    
+    async def get_admin_ids(self) -> List:
+        result = await self.pool.fetch(
+            "SELECT user_id FROM users WHERE role='admin';"
+        )
+        logging.info(f"Список администраторов: {result}")
+        return result
