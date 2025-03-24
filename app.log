@@ -1713,3 +1713,30 @@ aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: messa
 2025-03-24 22:46:42,270 - INFO - Polling stopped
 2025-03-24 22:46:42,685 - INFO - Подключение к базе данных закрыто.
 2025-03-24 22:46:42,685 - INFO - База данных закрыта. Бот остановлен.
+2025-03-24 22:56:05,657 - INFO - Запуск бота...
+2025-03-24 22:56:06,888 - INFO - Подключение к базе данных установлено.
+2025-03-24 22:56:07,192 - INFO - Таблицы проверены/созданы.
+2025-03-24 22:56:07,493 - INFO - Индексы проверены/созданы.
+2025-03-24 22:56:07,494 - INFO - Запуск планировщика...
+2025-03-24 22:56:07,495 - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-03-24 22:56:07,495 - INFO - Added job "run_parser" to job store "default"
+2025-03-24 22:56:07,495 - INFO - Scheduler started
+2025-03-24 22:56:07,855 - INFO - Start polling
+2025-03-24 22:56:07,948 - INFO - Run polling for bot @affine_test_bot id=7732473607 - 'affine'
+2025-03-24 22:56:15,171 - INFO - Update id=860672227 is handled. Duration 1017 ms by bot id=7732473607
+2025-03-24 22:56:17,342 - INFO - Update id=860672228 is handled. Duration 291 ms by bot id=7732473607
+2025-03-24 22:56:22,136 - WARNING - Ник user уже занят.
+2025-03-24 22:56:22,259 - INFO - Update id=860672229 is handled. Duration 574 ms by bot id=7732473607
+2025-03-24 22:56:55,176 - INFO - Пользователь 5124967932 изменил ник на fluck.
+2025-03-24 22:56:55,176 - INFO - Кэш для пользователя 5124967932 очищен.
+2025-03-24 22:56:55,655 - INFO - Update id=860672230 is handled. Duration 1274 ms by bot id=7732473607
+2025-03-24 22:57:02,287 - INFO - Update id=860672231 is handled. Duration 243 ms by bot id=7732473607
+2025-03-24 22:57:05,873 - INFO - Пользователь 5124967932 изменил ник на user.
+2025-03-24 22:57:05,873 - INFO - Кэш для пользователя 5124967932 очищен.
+2025-03-24 22:57:06,369 - INFO - Update id=860672232 is handled. Duration 1134 ms by bot id=7732473607
+2025-03-24 22:57:25,649 - INFO - Update id=860672233 is handled. Duration 600 ms by bot id=7732473607
+2025-03-24 22:57:32,807 - WARNING - Received SIGINT signal
+2025-03-24 22:57:32,808 - INFO - Polling stopped for bot @affine_test_bot id=7732473607 - 'affine'
+2025-03-24 22:57:32,808 - INFO - Polling stopped
+2025-03-24 22:57:33,221 - INFO - Подключение к базе данных закрыто.
+2025-03-24 22:57:33,221 - INFO - База данных закрыта. Бот остановлен.

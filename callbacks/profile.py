@@ -140,7 +140,11 @@ async def handle_update_nick(message: Message, db: Database, state: FSMContext) 
         await message.answer('Ник не может быть таким!', reply_markup=kb_back_profile)
         return
 
-    await db.update_nick(user_id, nick)
+    result = await db.update_nick(user_id, nick)
+    if not result:
+        await message.answer('Ник уже занят!', reply_markup=kb_back_profile)
+        return
+
     await state.clear()
     await send_profile(user_id, db, message=message)
 

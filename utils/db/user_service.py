@@ -70,12 +70,12 @@ class UserService:
         existing_nick = await self.pool.fetchval("SELECT 1 FROM users WHERE user_name=$1", user_name)
         if existing_nick:
             logging.warning(f"Ник {user_name} уже занят.")
-            return 'Этот ник уже занят.\nВведи другой'
+            return False
 
         await self.pool.execute('UPDATE users SET user_name=$1 WHERE user_id=$2', user_name, user_id)
         logging.info(f"Пользователь {user_id} изменил ник на {user_name}.")
         await self.clear_cache(user_id)
-        return 'Изменил.'
+        return True
 
     @alru_cache(maxsize=128)
     async def get_group(self, user_id: int) -> str:
