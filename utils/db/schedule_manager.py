@@ -53,7 +53,7 @@ class ScheduleManager:
         logging.info(f"Добавлено/обновлено {len(batch_data)} записей.")
 
         # Очистка кэша после обновления данных
-        await self.clear_cache()
+        await self.clear_cache_schedule()
 
     @alru_cache(maxsize=128)
     async def get_groups_name(self) -> List[asyncpg.Record]:
@@ -105,7 +105,7 @@ class ScheduleManager:
         """
         return await self.pool.fetchval(query, date)
 
-    async def clear_cache(self):
+    async def clear_cache_schedule(self):
         """
         Очистка кэша после обновления данных.
         """
