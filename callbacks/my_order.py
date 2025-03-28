@@ -14,7 +14,7 @@ router = Router()
 def get_text(data: dict):
     text = f'Статус: {data.get("status")}\n\n' \
            f'Название: {data.get("title")}\n' \
-           f'Тип работы {data.get("type_work")}\n' \
+           f'Тип работы {data.get("work_type")}\n' \
            f'Описание: {data.get("about")}\n' \
            f'Прайс: {data.get("price")} ₽\n' \
     

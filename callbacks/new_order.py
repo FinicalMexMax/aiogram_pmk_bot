@@ -142,7 +142,7 @@ async def order_price(message: Message, state: FSMContext):
     data = await state.get_data()
 
     confirmation_text = (
-        f"Тип работы: {data['type_work']}\n"
+        f"Тип работы: {data['work_type']}\n"
         f"Название работы: {data['title']}\n"
         f"Описание работы: {data.get('about', 'Не указано')}\n"
         f"Фото: {len(data.get('photo', []))} фотографий\n"

@@ -38,7 +38,7 @@ async def send_schedule_data(
 
     text = f'Расписание на {schedule_data["date"]}.\n\n' \
            f'Группа - {schedule_data["group_name"]}\n' \
-           f'Начало в {schedule_data["start_time"]}\n\n' \
+           f'Начало в {schedule_data["start_at"]}\n\n' \
            f'{pair_data}'
     
     buttons = [

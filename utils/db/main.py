@@ -62,17 +62,17 @@ class Database(
         CREATE TABLE IF NOT EXISTS users (
             id SERIAL PRIMARY KEY,
             user_id BIGINT UNIQUE,
-            user_name VARCHAR(100),
+            username VARCHAR(100),
             group_name VARCHAR(100),
             role VARCHAR(50) DEFAULT 'заказчик',
             status VARCHAR(50) DEFAULT 'active',
             balance NUMERIC(10, 2) DEFAULT 0,
-            datetime_reg TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            signup_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         );
         CREATE TABLE IF NOT EXISTS orders (
             id SERIAL PRIMARY KEY,
             title VARCHAR(50),
-            type_work VARCHAR(25),
+            work_type VARCHAR(25),
             about TEXT DEFAULT NULL,
             photo TEXT[],
             file TEXT[],
@@ -80,7 +80,7 @@ class Database(
             status VARCHAR(50) DEFAULT 'На модерации',
             customer BIGINT,
             executor BIGINT DEFAULT NULL,
-            datetime_create TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             FOREIGN KEY (customer) REFERENCES users(user_id),
             FOREIGN KEY (executor) REFERENCES users(user_id) ON DELETE SET NULL
         );
@@ -90,7 +90,7 @@ class Database(
             message VARCHAR (4096),
             photo TEXT[],
             status VARCHAR DEFAULT 'ожидание ответа',
-            send_datetime TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         );
         CREATE TABLE IF NOT EXISTS replenishment_operations (
             id SERIAL PRIMARY KEY,
@@ -98,8 +98,8 @@ class Database(
             amount NUMERIC(10, 2),
             tips NUMERIC(10, 2) DEFAULT 0,
             status VARCHAR DEFAULT 'Ожидание оплаты',
-            datetime_create TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-            datetime_payment TIMESTAMP DEFAULT NULL
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            paid_at TIMESTAMP DEFAULT NULL
         );
         CREATE TABLE IF NOT EXISTS ratings (
             id SERIAL PRIMARY KEY,
@@ -107,7 +107,7 @@ class Database(
             executor BIGINT,
             rating INTEGER,
             order_id INTEGER,
-            datetime_create TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         );
         CREATE TABLE IF NOT EXISTS transactions (
             id SERIAL PRIMARY KEY,
@@ -116,18 +116,18 @@ class Database(
             type VARCHAR(50),
             order_id INTEGER,
             related_user BIGINT,
-            datetime TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             FOREIGN KEY (user_id) REFERENCES users(user_id),
             FOREIGN KEY (order_id) REFERENCES orders(id)
         );
         CREATE TABLE IF NOT EXISTS schedules (
             id SERIAL PRIMARY KEY,
-            group_name VARCHAR(12),
+            group_name VARCHAR(13),
             date DATE,
             weekday TEXT,
             formation VARCHAR,
             alert VARCHAR,
-            start_time VARCHAR(5),
+            start_at VARCHAR(5),
             subjects JSONB
         );
         """

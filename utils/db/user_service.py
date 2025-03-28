@@ -12,17 +12,17 @@ class UserService:
     def __init__(self, pool: Pool):
         self.pool = pool
 
-    async def add_user(self, user_id: int, user_name: str, group_name: str) -> None:
+    async def add_user(self, user_id: int, username: str, group_name: str) -> None:
         """
         Добавляет нового пользователя в базу данных, если он ещё не существует.
         """
         exists = await self.user_exists(user_id)
         if not exists:
             query = """
-            INSERT INTO users (user_id, user_name, group_name)
+            INSERT INTO users (user_id, username, group_name)
             VALUES ($1, $2, $3);
             """
-            await self.pool.execute(query, user_id, user_name, group_name)
+            await self.pool.execute(query, user_id, username, group_name)
             logging.info(f"Пользователь {user_id} добавлен.")
             await self.clear_cache(user_id)
         else:
@@ -63,17 +63,17 @@ class UserService:
         logging.info(f"Изменена группа пользователя {user_id} на {group}.")
         await self.clear_cache(user_id)
 
-    async def update_nick(self, user_id: int, user_name: str) -> str:
+    async def update_nick(self, user_id: int, username: str) -> str:
         """
         Обновляет ник пользователя.
         """
-        existing_nick = await self.pool.fetchval("SELECT 1 FROM users WHERE user_name=$1", user_name)
+        existing_nick = await self.pool.fetchval("SELECT 1 FROM users WHERE username=$1", username)
         if existing_nick:
-            logging.warning(f"Ник {user_name} уже занят.")
+            logging.warning(f"Ник {username} уже занят.")
             return False
 
-        await self.pool.execute('UPDATE users SET user_name=$1 WHERE user_id=$2', user_name, user_id)
-        logging.info(f"Пользователь {user_id} изменил ник на {user_name}.")
+        await self.pool.execute('UPDATE users SET username=$1 WHERE user_id=$2', username, user_id)
+        logging.info(f"Пользователь {user_id} изменил ник на {username}.")
         await self.clear_cache(user_id)
         return True
 

@@ -37,14 +37,16 @@ class Parser:
     def parse_schedule_card(self, card):
         """Парсинг информации по одной карточке расписания"""
         group_name = card.find('h4', class_='card-title').text.strip()
-        start_time = card.find('span', class_='badge badge-info').text.split(' ')[-1].strip() if card.find('span', class_='badge badge-info') else None
+        print(group_name)
+        start_at = card.find('span', class_='badge badge-info').text.split(' ')[-1].strip() if card.find('span', class_='badge badge-info') else None
 
         subjects = []
         for elem in card.find('div', class_='card-text').find_all('strong'):
             subject_name = elem.next_sibling.strip() if elem.next_sibling else None
             instructor_name = elem.find_next('div', class_='col-7').find('span', class_='small badge badge-pill badge-secondary').text.strip() if elem.find_next('div', class_='col-7') else None
-            room_number = elem.find_next('span', class_='badge badge-pill badge-dark').text.strip() if elem.find_next('span', class_='badge badge-pill badge-dark') else None
             
+            room_number = room_el.text.strip() if (room_el := elem.find_next('span', class_='badge badge-pill badge-dark')) else None
+
             subjects.append({
                 'subject_number': elem.text.strip(),
                 'subject_name': subject_name,
@@ -52,7 +54,7 @@ class Parser:
                 'room_number': room_number
             })
         
-        return group_name, start_time, subjects
+        return group_name, start_at, subjects
 
     def __get_date_numbers(self) -> list[str]:
         """Возвращает список дат на неделю от текущего дня"""
@@ -91,13 +93,13 @@ class Parser:
             return
 
         for card in soup.find_all('div', class_='card-body'):
-            group_name, start_time, subjects = self.parse_schedule_card(card)
+            group_name, start_at, subjects = self.parse_schedule_card(card)
             self._schedule_data.append({
                 group_name: {
                     'formation': formation,
                     'date': date,
                     'weekday': weekday,
-                    'start_time': start_time,
+                    'start_at': start_at,
                     'alert': alert,
                     'subjects': subjects
                 }

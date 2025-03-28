@@ -18,14 +18,14 @@ class ScheduleManager:
         Добавляет или обновляет расписание батчем.
         """
         query = """
-        INSERT INTO schedules (group_name, date, weekday, formation, alert, start_time, subjects)
+        INSERT INTO schedules (group_name, date, weekday, formation, alert, start_at, subjects)
         VALUES ($1, $2, $3, $4, $5, $6, $7)
         ON CONFLICT (group_name, date) 
         DO UPDATE SET
             weekday = EXCLUDED.weekday,
             formation = EXCLUDED.formation,
             alert = EXCLUDED.alert,
-            start_time = EXCLUDED.start_time,
+            start_at = EXCLUDED.start_at,
             subjects = EXCLUDED.subjects;
         """
 
@@ -39,7 +39,7 @@ class ScheduleManager:
                         schedule["weekday"],
                         schedule["formation"],
                         schedule["alert"],
-                        schedule["start_time"],
+                        schedule["start_at"],
                         json.dumps(schedule["subjects"]),
                     ))
                 except KeyError as e:
@@ -58,7 +58,7 @@ class ScheduleManager:
     @alru_cache(maxsize=128)
     async def get_groups_name(self) -> List[asyncpg.Record]:
         """
-        Возвращает список групп из расписания (с кэшированием).
+        Возвращает список групп из расписания.
         """
         logging.info("Получение названий групп из кэша или базы данных.")
         return await self.pool.fetch(
@@ -68,7 +68,7 @@ class ScheduleManager:
     @alru_cache(maxsize=128)
     async def get_schedule_date(self) -> List:
         """
-        Получает доступные даты (с кэшированием).
+        Получает доступные даты.
         """
         logging.info("Получение доступных дат из кэша или базы данных.")
         query = """
@@ -82,7 +82,7 @@ class ScheduleManager:
     @alru_cache(maxsize=128)
     async def get_schedule_by_group(self, group_name: str, date: date) -> Dict[str, Any]:
         """
-        Получает расписание для указанной группы (с кэшированием).
+        Получает расписание для указанной группы.
         """
         logging.info(f"Получение расписания для группы {group_name} на {date} из кэша или базы данных.")
         query = """
@@ -94,7 +94,7 @@ class ScheduleManager:
     @alru_cache(maxsize=128)
     async def get_schedule_alert(self, date: date) -> List:
         """
-        Получает alert для указанной даты (с кэшированием).
+        Получает alert для указанной даты.
         """
         logging.info(f"Получение alert для {date} из кэша или базы данных.")
         query = """

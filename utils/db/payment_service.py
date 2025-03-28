@@ -18,7 +18,7 @@ class PaymentService:
         Создаёт операцию пополнения баланса.
         """
         query = """
-        INSERT INTO replenishment_operations (user_id, amount, status, datetime_create)
+        INSERT INTO replenishment_operations (user_id, amount, status, created_at)
         VALUES ($1, $2, $3, NOW()) RETURNING id;
         """
         operation_id = await self.pool.fetchval(query, user_id, amount, ORDER_STATUS_WAIT_PAYMENT)
@@ -47,7 +47,7 @@ class PaymentService:
                     await conn.execute(
                         """
                         UPDATE replenishment_operations 
-                        SET tips=$1, status=$2, datetime_payment=NOW()
+                        SET tips=$1, status=$2, paid_at=NOW()
                         WHERE id=$3;
                         """,
                         tips, PAYMENT_STATUS_PAID, pay_id
@@ -136,7 +136,7 @@ class PaymentService:
         """
         await conn.execute(
             """
-            INSERT INTO transactions (user_id, amount, type, order_id, related_user, datetime)
+            INSERT INTO transactions (user_id, amount, type, order_id, related_user, created_at)
             VALUES ($1, $2, $3, $4, $5, NOW());
             """,
             user_id, amount, type_, order_id, related_user

@@ -40,10 +40,10 @@ async def send_profile(
     username = (message.from_user.username if message else callback_query.from_user.username)
     logging.debug(f"Полученные данные профиля: {data}")
 
-    date_str = data.get("datetime_reg", "неизвестно").strftime('%d.%m.%Y') if isinstance(data.get("datetime_reg"), datetime) else "неизвестно"
+    date_str = data.get("signup_date", "неизвестно").strftime('%d.%m.%Y') if isinstance(data.get("signup_date"), datetime) else "неизвестно"
     text = (
         f'Пользователь, @{username}\n'
-        f'Ник: {data.get("user_name", "не указан")}\n'
+        f'Ник: {data.get("username", "не указан")}\n'
         f'Группа: {data.get("group_name", "не указана")}\n'
         f'Роль: {data.get("role", "не указана")}\n'
         f'Баланс: {data.get("balance", 0)} ₽\n'
