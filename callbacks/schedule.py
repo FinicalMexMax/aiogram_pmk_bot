@@ -17,7 +17,7 @@ router = Router()
 def get_date():
     date = datetime.now()
 
-    if date.strftime("%A") == 'Sunday':
+    if date.strftime("%A") == 'Воскресенье':
         date = date + timedelta(days=1)
 
     return date.date()

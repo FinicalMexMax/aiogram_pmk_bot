@@ -37,7 +37,6 @@ class Parser:
     def parse_schedule_card(self, card):
         """Парсинг информации по одной карточке расписания"""
         group_name = card.find('h4', class_='card-title').text.strip()
-        print(group_name)
         start_at = card.find('span', class_='badge badge-info').text.split(' ')[-1].strip() if card.find('span', class_='badge badge-info') else None
 
         subjects = []
