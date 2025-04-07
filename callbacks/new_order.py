@@ -20,9 +20,13 @@ router = Router()
 async def main_order(callback_query: CallbackQuery, state: FSMContext):
     if callback_query.data == 'back_order':
         await state.clear()
+
+    text = "Тут ты можешь разместить свой заказ на выполнение любой работы.\n" \
+           "P.S. Всё, представленное в этом разделе, реализовано в образовательных целях!"
+
         
     pattern = dict(
-        text='Тут ты можешь разместить свой заказ по выполнению любой работы.',
+        text=text,
         reply_markup=inline_builder(
             text=[
                 'Создать заказ', 'Найти исполнителя',
@@ -45,7 +49,7 @@ async def main_order(callback_query: CallbackQuery, state: FSMContext):
 async def order_create(callback_query: CallbackQuery, state: FSMContext):
     await state.set_state(NewOrder.type_work)
     await callback_query.message.edit_text(
-        text='Что за работа? Выбери или напиши свой', 
+        text='Что за работа? Выбери или напиши свой вариант.', 
         reply_markup=inline_builder(
             text=['Практическая', 'Самостоятельная', 'Отмена'],
             callback_data=['Практическая', 'Самостоятельная', 'back_order'],
