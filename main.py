@@ -70,7 +70,7 @@ async def welcome_message(
     if group:
         await db.add_user(
             user_id=message.from_user.id,
-            user_name=message.from_user.username,
+            username=message.from_user.username,
             group_name=group
         )
         logger.info(f"Добавлен новый пользователь {message.from_user.username} в группу {group}")
