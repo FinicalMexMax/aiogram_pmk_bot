@@ -38,7 +38,7 @@ async def send_payment(bot: Bot, user_amount: int, char_id: int, user_id: int, d
     await bot.send_invoice(
         chat_id=char_id,
         title="Пополнение баланса",
-        description="...",
+        description="номер карты для тестовой оплаты - 4918019199883839",
         provider_token=getenv('TG_PAYMENT_TOKEN'),
         currency="rub",
         photo_url="https://www.aroged.com/wp-content/uploads/2022/06/Telegram-has-a-premium-subscription.jpg",
@@ -62,6 +62,14 @@ async def get_value(callback_query: CallbackQuery, state: FSMContext):
     await state.set_state(Pay.amount)
     await callback_query.message.edit_text(
         text='Введи сумму пополнения.',
+        reply_markup=kb_back_profile
+    )
+
+@router.callback_query(F.data == 'cancel_payment')
+async def cancel_payment(callback_query: CallbackQuery, state: FSMContext):
+    await state.clear()
+    await callback_query.message.answer(
+        text="Пополнение отменено.",
         reply_markup=kb_back_profile
     )
 

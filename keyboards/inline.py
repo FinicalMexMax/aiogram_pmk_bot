@@ -16,10 +16,9 @@ kb_back_profile = InlineKeyboardMarkup(
 kb_pay = InlineKeyboardMarkup(
     inline_keyboard=[
         [InlineKeyboardButton(text='Пополнить', pay=True)],
-        [InlineKeyboardButton(text='Отмена', callback_data='back_profile')]
+        [InlineKeyboardButton(text='Отмена', callback_data='cancel_payment')]
     ]
 )
-
 
 def check_payment_kb(order_id: int) -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(
