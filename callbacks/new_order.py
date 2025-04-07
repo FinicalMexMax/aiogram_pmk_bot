@@ -154,9 +154,9 @@ async def order_price(message: Message, state: FSMContext):
     await message.answer(
         confirmation_text,
         reply_markup=inline_builder(
-            text=['Подтвердить', 'Изменить'],
-            callback_data=['order_completed', 'edit_order'],
-            sizes=[2]
+            text=['Подтвердить', 'Изменить', 'Отмена'],
+            callback_data=['order_completed', 'edit_order', 'back_main'],
+            sizes=[2,1]
         )
     )
 
