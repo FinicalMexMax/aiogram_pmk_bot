@@ -145,8 +145,8 @@ async def order_price(message: Message, state: FSMContext):
         f"Тип работы: {data['type_work']}\n"
         f"Название работы: {data['title']}\n"
         f"Описание работы: {data.get('about', 'Не указано')}\n"
-        f"Фото: {len(data.get('photo', []))} фотографий\n"
-        f"Файлы: {len(data.get('file', []))} файлов\n"
+        f"Фото: {len(data.get('photo', []))} шт.\n"
+        f"Файлы: {len(data.get('file', []))} шт.\n"
         f"Цена: {data['price']} ₽\n\n"
         "Все верно?"
     )
