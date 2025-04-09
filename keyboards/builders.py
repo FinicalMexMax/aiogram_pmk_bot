@@ -81,43 +81,12 @@ kb_admin_panel = inline_builder(
     text=[
         'Пользователи', 'Уведомления',
         'Сбросить кэш', 'Обновить расписание',
-        'Управление заказами',
         'Назад'
     ],
     callback_data=[
         'admin_users', 'admin_notif',
         'invalidate_cache', 'update_schedule',
-        'admin_order',
         'back_profile'
     ],
     sizes=[2,2,1]
 )
-
-class Pagination(CallbackData, prefix='pag'):
-    action: str
-    page: int
-
-
-def paginator_orders(page: int = 0):
-    return inline_builder(
-        text=[
-            '⬅️',
-            '➡️',
-            'Назад'
-        ],
-        callback_data=[
-            Pagination(action='prev', page=page),
-            Pagination(action='next', page=page),
-            'back_order'
-        ]
-    )
-
-
-def paginator_schedules(date_list: list):
-    builder = InlineKeyboardBuilder()
-
-    for date in date_list:
-        builder.button(text=date, callback_data=f'schedules|{date}')
-
-    builder.adjust(1)
-    return builder.as_markup()

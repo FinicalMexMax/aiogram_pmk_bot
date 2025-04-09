@@ -11,13 +11,8 @@ from aiogram.types import Message, CallbackQuery
 from aiogram.filters import CommandStart
 from aiogram.fsm.context import FSMContext
 
-from middlewares.album import SomeMiddleware
-from callbacks.new_order import router as new_order_router
-from callbacks.find_performer import router as find_router
-from callbacks.my_order import router as my_order_router
 from callbacks.profile import router as profile_router
 from callbacks.support import router as support_router
-from callbacks.payment import router as pay_router, pre_checkout_query
 from callbacks.admin_panel import router as admin_router
 from callbacks.schedule import router as schedule_router
 
@@ -78,9 +73,9 @@ async def welcome_message(
     pattern = dict(
         text="Hello",
         reply_markup=inline_builder(
-            text=["Расписание", "Заказы", "Профиль"],
-            callback_data=["schedules", "order", "profile"],
-            sizes=2
+            text=["Расписание", "Профиль"],
+            callback_data=["schedules", "profile"],
+            sizes=1
         )
     )
 
@@ -126,12 +121,9 @@ async def main():
     await db.connect()
     await db.create_and_check_table()
 
-    dp.message.middleware(SomeMiddleware())
-    dp.pre_checkout_query.register(pre_checkout_query)
-
     dp.include_routers(
-        router, new_order_router, find_router, my_order_router,
-        profile_router, support_router, pay_router, admin_router, schedule_router
+        router, profile_router, support_router, 
+        admin_router, schedule_router
     )
 
     asyncio.create_task(scheduler_task(db))
