@@ -16,7 +16,7 @@ router = Router()
 @router.callback_query(F.data.in_('admin_panel'))
 async def admin_panel(callback_query: CallbackQuery):
     await callback_query.message.edit_text(
-        text='admin panel',
+        text='О, босс на месте.\nДавай по-быстрому решим, кто тут главный.',
         reply_markup=kb_admin_panel
     )
 

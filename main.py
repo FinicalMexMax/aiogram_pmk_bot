@@ -2,6 +2,7 @@ import asyncio
 import logging
 from os import getenv
 from dotenv import load_dotenv
+from random import choice
 
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.interval import IntervalTrigger
@@ -38,6 +39,16 @@ router = Router()
 load_dotenv()
 
 
+test_pattern = [
+    'О, вернулся. Без меня, как без рук, да?\n' \
+    'Не бойся, я уже всё сделал за тебя.',
+    'Опа, герой вернулся.\n' \
+    'Что, без супербота ни шагу?',
+    'Ну что, снова без меня никак?\n' \
+    'Ладно, покажу тебе, как делаются дела.'
+]
+
+
 async def run_parser(db: Database):
     logger.info("Запуск парсера...")
     try:
@@ -71,7 +82,7 @@ async def welcome_message(
         logger.info(f"Добавлен новый пользователь {message.from_user.username} в группу {group}")
 
     pattern = dict(
-        text="Hello",
+        text=choice(test_pattern),
         reply_markup=inline_builder(
             text=["Расписание", "Профиль"],
             callback_data=["schedules", "profile"],
