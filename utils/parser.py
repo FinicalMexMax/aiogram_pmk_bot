@@ -35,25 +35,41 @@ class Parser:
         return soup_elem.text.strip() if soup_elem else default
 
     def parse_schedule_card(self, card):
-        """Парсинг информации по одной карточке расписания"""
         group_name = card.find('h4', class_='card-title').text.strip()
-        start_at = card.find('span', class_='badge badge-info').text.split(' ')[-1].strip() if card.find('span', class_='badge badge-info') else None
+        start_at = card.find('span', class_='badge badge-info')
+        start_at = start_at.text.split(' ')[-1].strip() if start_at else None
 
         subjects = []
-        for elem in card.find('div', class_='card-text').find_all('strong'):
-            subject_name = elem.next_sibling.strip() if elem.next_sibling else None
-            instructor_name = elem.find_next('div', class_='col-7').find('span', class_='small badge badge-pill badge-secondary').text.strip() if elem.find_next('div', class_='col-7') else None
-            
-            room_number = room_el.text.strip() if (room_el := elem.find_next('span', class_='badge badge-pill badge-dark')) else None
+
+        # каждая пара — это div.col-12 + badge-secondary (преподаватель) и badge-dark (аудитория)
+        col_blocks = card.find_all('div', class_='col-12')
+        teachers = card.find_all('span', class_='small badge badge-pill badge-secondary')
+        rooms = card.find_all('span', class_='badge badge-pill badge-dark')
+
+        for i, col in enumerate(col_blocks):
+            # номер пары
+            subject_number_tag = col.find('strong')
+            subject_number = subject_number_tag.text.strip() if subject_number_tag else None
+
+            # название предмета — оставшийся текст после strong
+            subject_name = subject_number_tag.next_sibling.strip() if subject_number_tag and subject_number_tag.next_sibling else None
+
+            # преподаватель — по порядку
+            instructor_name = teachers[i].text.strip() if i < len(teachers) else None
+
+            # аудитория — по порядку
+            room_number = rooms[i].text.strip() if i < len(rooms) else None
 
             subjects.append({
-                'subject_number': elem.text.strip(),
+                'subject_number': subject_number,
                 'subject_name': subject_name,
                 'teacher': instructor_name,
                 'room_number': room_number
             })
-        
+
         return group_name, start_at, subjects
+
+
 
     def __get_date_numbers(self) -> list[str]:
         """Возвращает список дат на неделю от текущего дня"""
